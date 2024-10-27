@@ -1,0 +1,41 @@
+@import "../../styles/globalColor.scss";
+
+.skills-container {
+  h1 {
+    font-size: 50px;
+    color: $faceBook;
+  }
+  .skills-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    div {
+      display: flex;
+      justify-content: center;
+      opacity: 1;
+      width: 10rem;
+      transform: none !important;
+      margin: 0.5rem 1rem !important;
+      padding: 0.5rem 1rem !important;
+      background-color: $lightBackground2 !important;
+      border-radius: 0.5rem;
+      img {
+        max-width: 100% !important;
+        height: auto !important;
+        width: 3.2rem !important;
+      }
+      span {
+        margin: 1rem !important;
+        color: $cardSubtitle !important;
+        font-size: 1.1rem;
+      }
+
+      @media (min-width: 768px) {
+        width: 12rem;
+        margin: 1 rem;
+      }
+    }
+  }
+}

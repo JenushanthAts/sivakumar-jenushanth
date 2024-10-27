@@ -1,0 +1,75 @@
+@import "../../styles/globalColor.scss";
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+
+  h1 {
+    color: $faceBook;
+    font-size: 50px !important;
+  }
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: $lightBackground2;
+  }
+  .timeline-logo {
+    width: 20% !important;
+    margin-right: 20px !important;
+    flex-shrink: 0 !important;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .timeline-item {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .timeline-logo {
+        display: flex !important;
+        width: 25% !important;
+        display: block;
+        margin-bottom: 10px !important;
+      }
+    }
+    h1 {
+      font-size: 30px !important;
+    }
+  }
+
+  .timeline-details {
+    h3 {
+      font-size: 1.2rem;
+      margin: 0;
+      color: $titleColor2;
+    }
+
+    h4 {
+      font-size: 1rem;
+      margin: 5px 0;
+      color: $blogCardContainerColor;
+    }
+
+    span {
+      font-size: 1rem;
+      color: $subTitle;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: $githubRepoCardColor;
+    }
+  }
+}
