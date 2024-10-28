@@ -6,12 +6,12 @@
   margin: 2rem auto 0;
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: $faceBook !important;
   }
   @media (max-width: 768px) {
     h1 {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
   .projects-body {
@@ -46,12 +46,12 @@
           .card-title {
             font-weight: 500;
             letter-spacing: 1.5px;
-            font-size: 22px;
+            font-size: 18px;
           }
           .place {
             color: $subTitle !important;
             font-weight: 400;
-            font-size: 19px;
+            font-size: 16px;
             letter-spacing: 1px;
             margin: 0;
             padding: 0;
@@ -59,7 +59,7 @@
           .summary {
             color: $linkedin !important;
             font-weight: 300;
-            font-size: 17px;
+            font-size: 14px;
             // margin: 0;
             padding: 0;
             // letter-spacing: 1px;
@@ -71,10 +71,24 @@
             background-color: $cardBackgroundColor1 !important;
             color: $githubProfileCardBorder !important;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 14px !important;
             padding: 10px;
             border-radius: 5px;
             float: right;
+          }
+        }
+        @media (max-width: 768px) {
+          .duration-div {
+            width: 80% !important;
+            .duration {
+              background-color: $cardBackgroundColor1 !important;
+              color: $githubProfileCardBorder !important;
+              font-weight: 500;
+              font-size: 14px !important;
+              padding: 10px;
+              border-radius: 5px;
+              float: left;
+            }
           }
         }
         .content-list {
@@ -110,7 +124,7 @@
     .card-title {
       letter-spacing: 1px !important;
       font-weight: 300 !important;
-      font-size: 23px !important;
+      font-size: 17px !important;
     }
   }
 
@@ -118,10 +132,5 @@
     padding: 0 !important;
     margin: 0 !important;
     width: 100% !important;
-    .duration {
-      padding: 5px !important;
-      margin: 0 !important;
-      float: left !important;
-    }
   }
 }

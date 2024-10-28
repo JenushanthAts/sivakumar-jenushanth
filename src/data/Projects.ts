@@ -1,5 +1,5 @@
-import ielts from "../assets/ielts.png";
-import zoneCelon from "../assets/zoneCelon.png";
+import ielts from "../assets/IELTS.webp";
+import zoneCelon from "../assets/zoneCelon.webp";
 
 export const PrjectsData = [
   {
