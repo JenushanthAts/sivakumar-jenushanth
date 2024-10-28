@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/sivakumar-jenushanth/static/css/main.adf4ed52.css",
-    "main.js": "/sivakumar-jenushanth/static/js/main.051ad835.js",
-    "static/media/kaayalTekLogo.png": "/sivakumar-jenushanth/static/media/kaayalTekLogo.ba607c126ab1c0f6ea60.png",
-    "static/media/Profile.jpg": "/sivakumar-jenushanth/static/media/Profile.b5be4b16954be7ff5633.jpg",
-    "static/media/zoneCelon.png": "/sivakumar-jenushanth/static/media/zoneCelon.58f4b0e9a98109e4c3ee.png",
-    "static/media/arLogo.png": "/sivakumar-jenushanth/static/media/arLogo.95c8b6507c09556093fa.png",
+    "main.css": "/sivakumar-jenushanth/static/css/main.d05a8a4a.css",
+    "main.js": "/sivakumar-jenushanth/static/js/main.69e46bc8.js",
+    "static/media/kaayalTekLogo.webp": "/sivakumar-jenushanth/static/media/kaayalTekLogo.33987be8e0f9692a4ab5.webp",
+    "static/media/jenushanth.webp": "/sivakumar-jenushanth/static/media/jenushanth.38ee34c87b336fcc7162.webp",
+    "static/media/IELTS.webp": "/sivakumar-jenushanth/static/media/IELTS.35c9ca8443f7f144f07f.webp",
+    "static/media/zoneCelon.webp": "/sivakumar-jenushanth/static/media/zoneCelon.1efddbc76403eb86da88.webp",
+    "static/media/School.webp": "/sivakumar-jenushanth/static/media/School.82adb499d110975401f2.webp",
     "static/media/nestjs.svg": "/sivakumar-jenushanth/static/media/nestjs.ef4268f5bb32b733c0f23bf56867a659.svg",
-    "static/media/ielts.png": "/sivakumar-jenushanth/static/media/ielts.fee374b51b28f589a4ad.png",
-    "static/media/apptimusLogo.png": "/sivakumar-jenushanth/static/media/apptimusLogo.772fb5d77385398a4b48.png",
     "static/media/Postman.svg": "/sivakumar-jenushanth/static/media/Postman.6936833bc99b5a07559a3cfbb41db20f.svg",
     "static/media/aws.svg": "/sivakumar-jenushanth/static/media/aws.3dc6e83c8f57a34a5de9a4f090d9e47a.svg",
+    "static/media/arLogo.webp": "/sivakumar-jenushanth/static/media/arLogo.a9efbc3304fe52ad7b2b.webp",
+    "static/media/jaffnaUni.webp": "/sivakumar-jenushanth/static/media/jaffnaUni.9e16f3e2d756b8bd3f75.webp",
     "static/media/sass.svg": "/sivakumar-jenushanth/static/media/sass.13756c401e1234ed0292badcd4196465.svg",
     "static/media/avonetLogo.webp": "/sivakumar-jenushanth/static/media/avonetLogo.e0fd6eebc6c18c9b445b.webp",
     "static/media/mongodb.svg": "/sivakumar-jenushanth/static/media/mongodb.65cd0cbff6fe3e6539854b96c4560945.svg",
@@ -19,6 +20,7 @@
     "static/media/NodeJS.svg": "/sivakumar-jenushanth/static/media/NodeJS.d01eb487bc154d914fbee19be73a6ef0.svg",
     "static/media/linux.svg": "/sivakumar-jenushanth/static/media/linux.cf0b22ddf9a0a18aef959e42b6285d7e.svg",
     "static/media/Redux.svg": "/sivakumar-jenushanth/static/media/Redux.216ea07e342a85ee87d67465326c6859.svg",
+    "static/media/apptimusLogo.webp": "/sivakumar-jenushanth/static/media/apptimusLogo.cc2d9cf3157629bb7f7d.webp",
     "static/media/TypeScript.svg": "/sivakumar-jenushanth/static/media/TypeScript.0553733a9d433cefaf9e04ffcde0eb7a.svg",
     "static/media/NextJS.svg": "/sivakumar-jenushanth/static/media/NextJS.746ccc42c40b01641fc036309b9a66db.svg",
     "static/media/python.svg": "/sivakumar-jenushanth/static/media/python.888cd80d31702f3cdaa2a0e2d56c436c.svg",
@@ -39,11 +41,11 @@
     "static/media/windows.svg": "/sivakumar-jenushanth/static/media/windows.feda7ca0dcb55f66f1439c3496d5bcea.svg",
     "static/media/javascript.svg": "/sivakumar-jenushanth/static/media/javascript.4e191ced82f7d9fb6e572e1600298643.svg",
     "static/media/dialogflow.svg": "/sivakumar-jenushanth/static/media/dialogflow.45479e289d0a24e7c0be8d780c2f111a.svg",
-    "main.adf4ed52.css.map": "/sivakumar-jenushanth/static/css/main.adf4ed52.css.map",
-    "main.051ad835.js.map": "/sivakumar-jenushanth/static/js/main.051ad835.js.map"
+    "main.d05a8a4a.css.map": "/sivakumar-jenushanth/static/css/main.d05a8a4a.css.map",
+    "main.69e46bc8.js.map": "/sivakumar-jenushanth/static/js/main.69e46bc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.adf4ed52.css",
-    "static/js/main.051ad835.js"
+    "static/css/main.d05a8a4a.css",
+    "static/js/main.69e46bc8.js"
   ]
 }
