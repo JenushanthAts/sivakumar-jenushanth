@@ -1,15 +1,19 @@
+@import "../../styles/globalColor.scss";
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #264668;
+  background-color: $lightBackground2 !important;
   padding: 0rem 1rem 0.3rem 1rem; //top right bottom left
-
+  box-shadow: 5px 5px $lightBackground2;
+  @media (max-width: 768px) {
+    background-color: black !important;
+  }
   &__logo {
-    color: #fff;
     h1 {
-      font-size: 1.5rem;
-      color: #f4a261 !important;
+      font-size: 1.2rem;
+      color: $darkGreen !important;
     }
   }
 
@@ -19,12 +23,16 @@
     gap: 1.5rem;
 
     li a {
-      color: #fff;
+      color: $darkGreen;
       text-decoration: none;
       font-weight: 500;
-      font-size: 1.2rem;
+      font-size: 1rem;
       &:hover {
-        color: #f4a261;
+        color: $lightBackground2;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: $darkGreen;
+        padding: 10px;
       }
     }
 
@@ -35,7 +43,7 @@
       left: 0;
       width: 100%;
       flex-direction: column;
-      background-color: #333;
+      background-color: $lightBackground2;
       padding: 1rem 0;
     }
 
@@ -53,7 +61,7 @@
     .navbar__toggle-bar {
       width: 25px;
       height: 3px;
-      background-color: #fff;
+      background-color: $lightBackground2;
     }
 
     @media (max-width: 768px) {

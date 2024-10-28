@@ -1,7 +1,7 @@
-import arLogo from "../assets/arLogo.png";
-import apptimusLogo from "../assets/apptimusLogo.png";
+import arLogo from "../assets/arLogo.webp";
+import apptimusLogo from "../assets/apptimusLogo.webp";
 import avonetLogo from "../assets/avonetLogo.webp";
-import kaayalTekLogo from "../assets/kaayalTekLogo.png";
+import kaayalTekLogo from "../assets/kaayalTekLogo.webp";
 
 export const ExperienceData = [
   {

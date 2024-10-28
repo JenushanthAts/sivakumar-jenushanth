@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../../assets/Profile.jpg";
+import jenushanth from "../../assets/jenushanth.webp";
 
 import "./Home.scss";
 
@@ -30,7 +30,7 @@ const Home = () => {
           </div>
         </div>
         <div className="greeting-image-div">
-          <img alt="Jenushanth, Web developer" src={Profile} />
+          <img alt="Jenushanth, Web developer" src={jenushanth} />
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@
   margin: 0 auto;
 
   .educations-header {
-    font-size: 50px;
+    font-size: 40px;
     color: $faceBook;
   }
   .educations-body {
@@ -40,31 +40,31 @@
         .title {
           width: 80% !important;
           .card-title {
-            // color: $cardTextColor !important;
-            font-weight: 500;
+            color: $skillsColor !important;
+            font-weight: 700;
             letter-spacing: 1.5px;
-            font-size: 22px;
+            font-size: 18px;
           }
           .institute {
-            color: $google !important;
-            font-weight: 400;
-            font-size: 19px;
+            color: $darkGreen !important;
+            font-weight: 600;
+            font-size: 16px;
             letter-spacing: 1px;
           }
           .card-subtitle {
             color: $linkedin !important;
-            font-weight: 300;
-            font-size: 17px;
+            font-weight: 600;
+            font-size: 16px;
             letter-spacing: 1px;
           }
         }
         .duration-div {
           width: 20% !important;
           .duration {
-            background-color: $cardBackgroundColor1 !important;
-            color: $githubProfileCardBorder !important;
-            font-weight: 500;
-            font-size: 18px;
+            background-color: $cardBackgroundColor2 !important;
+            color: $subTitle !important;
+            font-weight: 700;
+            font-size: 14px;
             padding: 10px;
             border-radius: 5px;
             float: right;
@@ -85,7 +85,7 @@
     flex-direction: column !important;
   }
   .educations-header {
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
   .card-body {
     width: 100% !important;
@@ -96,7 +96,7 @@
     .card-title {
       letter-spacing: 1px !important;
       font-weight: 300 !important;
-      font-size: 23px !important;
+      font-size: 16px !important;
     }
   }
 
@@ -105,7 +105,7 @@
     margin: 0 !important;
     width: 100% !important;
     .duration {
-      padding: 5px !important;
+      padding: 10px !important;
       margin: 0 !important;
       float: left !important;
     }

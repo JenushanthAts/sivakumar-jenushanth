@@ -1,5 +1,5 @@
-import jaffnaLogo from "../assets/Jaffna-uni.png";
-import koddaikallarLogo from "../assets/School.jpg";
+import jaffnaLogo from "../assets/jaffnaUni.webp";
+import koddaikallarLogo from "../assets/School.webp";
 
 export const EducationData = [
   {
