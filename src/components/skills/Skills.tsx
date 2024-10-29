@@ -9,7 +9,7 @@ const Skills = () => {
       <div className="skills-div">
         {SkillLists.map((ele, index) => (
           <div key={index}>
-            <img src={ele.logo} alt={ele.name} />
+            <img src={ele.logo} alt={ele.name} loading="eager" />
             <span>{ele.name}</span>
           </div>
         ))}
