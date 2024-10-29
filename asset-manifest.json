@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sivakumar-jenushanth/static/css/main.d05a8a4a.css",
-    "main.js": "/sivakumar-jenushanth/static/js/main.69e46bc8.js",
+    "main.css": "/sivakumar-jenushanth/static/css/main.a6f07179.css",
+    "main.js": "/sivakumar-jenushanth/static/js/main.99e27031.js",
     "static/media/kaayalTekLogo.webp": "/sivakumar-jenushanth/static/media/kaayalTekLogo.33987be8e0f9692a4ab5.webp",
     "static/media/jenushanth.webp": "/sivakumar-jenushanth/static/media/jenushanth.38ee34c87b336fcc7162.webp",
     "static/media/IELTS.webp": "/sivakumar-jenushanth/static/media/IELTS.35c9ca8443f7f144f07f.webp",
@@ -41,11 +41,11 @@
     "static/media/windows.svg": "/sivakumar-jenushanth/static/media/windows.feda7ca0dcb55f66f1439c3496d5bcea.svg",
     "static/media/javascript.svg": "/sivakumar-jenushanth/static/media/javascript.4e191ced82f7d9fb6e572e1600298643.svg",
     "static/media/dialogflow.svg": "/sivakumar-jenushanth/static/media/dialogflow.45479e289d0a24e7c0be8d780c2f111a.svg",
-    "main.d05a8a4a.css.map": "/sivakumar-jenushanth/static/css/main.d05a8a4a.css.map",
-    "main.69e46bc8.js.map": "/sivakumar-jenushanth/static/js/main.69e46bc8.js.map"
+    "main.a6f07179.css.map": "/sivakumar-jenushanth/static/css/main.a6f07179.css.map",
+    "main.99e27031.js.map": "/sivakumar-jenushanth/static/js/main.99e27031.js.map"
   },
   "entrypoints": [
-    "static/css/main.d05a8a4a.css",
-    "static/js/main.69e46bc8.js"
+    "static/css/main.a6f07179.css",
+    "static/js/main.99e27031.js"
   ]
 }
