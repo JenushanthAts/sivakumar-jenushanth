@@ -11,19 +11,22 @@ const Education = () => (
       {EducationData.map((education, index: number) => (
         <div className="degree-card" key={index}>
           <div className="card-img">
-            <img src={education.logo} alt={education.institute} />
+            <img
+              src={education.logo}
+              alt={education.institute}
+              loading="eager"
+            />
           </div>
           <div className="card-body">
             <div className="body-header">
               <div className="title">
-                <h2 className="card-title" style={{ color: "rgb(20, 33, 61)" }}>
-                  {education.title}
-                </h2>
+                <h2 className="card-title">{education.title}</h2>
                 <p className="institute">{education.institute}</p>
                 <p className="card-subtitle">{education.location}</p>
-              </div>
-              <div className="duration-div">
-                <h3 className="duration">{education.duration}</h3>
+                {/* <p className="card-subtitle">{education.duration}</p> */}
+                <div className="duration-div">
+                  <h3 className="duration">{education.duration}</h3>
+                </div>
               </div>
             </div>
           </div>

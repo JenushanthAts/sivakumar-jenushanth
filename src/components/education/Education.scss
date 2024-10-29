@@ -1,113 +1,82 @@
 @import "../../styles/globalColor.scss";
 
 .education-container {
-  width: 90%;
-  padding: 20px;
-  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  padding-top: 40px;
 
   .educations-header {
-    font-size: 40px;
+    // font-size: 40px !important;
     color: $faceBook;
+
+    // @media (max-width: 320px) {
+    //   font-size: 20px !important;
+    // }
   }
   .educations-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr !important;
+    }
     .degree-card {
-      display: flex;
-      width: 100%;
-      // background: white;
-      justify-content: center;
-      align-items: center;
+      display: flex !important;
+      width: 100% !important;
+      background: $lightBackground2;
+      flex-direction: row !important;
+      align-items: flex-start !important;
+      border-radius: 8px;
     }
 
     .card-img {
-      width: 200px;
-      height: auto;
       img {
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
         clip-path: circle(40%);
       }
     }
     .card-body {
-      background: $lightBackground2;
-      padding: 15px;
-      border-radius: 7px;
-      width: 90%;
-      margin: 10px;
+      padding: 10px;
+      width: 100%;
       .body-header {
         display: flex;
         border-radius: 6px;
         padding: 10px;
         .title {
-          width: 80% !important;
+          width: 100% !important;
           .card-title {
-            color: $skillsColor !important;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            font-size: 18px;
+            font-weight: 700 !important;
+            letter-spacing: 1px !important;
+            font-size: 16px !important;
           }
           .institute {
-            color: $darkGreen !important;
+            color: $cardSubtitle !important;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 14px;
             letter-spacing: 1px;
           }
           .card-subtitle {
-            color: $linkedin !important;
+            color: $subTitle !important;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 14px;
             letter-spacing: 1px;
           }
         }
         .duration-div {
-          width: 20% !important;
           .duration {
             background-color: $cardBackgroundColor2 !important;
-            color: $subTitle !important;
+            color: $textColor2 !important;
             font-weight: 700;
             font-size: 14px;
             padding: 10px;
+            margin: 0;
             border-radius: 5px;
-            float: right;
+            float: left !important;
           }
         }
-        .content-list {
-          padding-left: 10px;
-          padding-right: 10px;
-        }
       }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .body-header,
-  .degree-card {
-    flex-direction: column !important;
-  }
-  .educations-header {
-    font-size: 20px !important;
-  }
-  .card-body {
-    width: 100% !important;
-  }
-
-  .title {
-    width: 100% !important;
-    .card-title {
-      letter-spacing: 1px !important;
-      font-weight: 300 !important;
-      font-size: 16px !important;
-    }
-  }
-
-  .education-container .educations-body .card-body .body-header .duration-div {
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
-    .duration {
-      padding: 10px !important;
-      margin: 0 !important;
-      float: left !important;
     }
   }
 }
