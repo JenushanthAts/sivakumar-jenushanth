@@ -1,136 +1,102 @@
 @import "../../styles/globalColor.scss";
 
 .projects-container {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 2rem auto 0;
+  padding-top: 40px;
+  display: grid;
+  gap: 3rem;
 
-  h1 {
-    font-size: 40px;
-    color: $faceBook !important;
-  }
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 20px;
-    }
+  .projects-header {
+    color: $faceBook;
   }
   .projects-body {
-    .degree-card {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr !important;
+    }
+    .project-card {
+      display: flex !important;
+      width: 100% !important;
+      background: $lightBackground2;
+      flex-direction: row !important;
+      align-items: flex-start !important;
+      border-radius: 8px;
     }
 
-    .card-img {
-      width: 200px;
-      height: auto;
+    .project-img {
+      width: 150px !important;
+      padding: 10px;
+      @media (max-width: 640px) {
+        width: 100px !important;
+      }
       img {
         max-width: 100%;
-        max-height: 80%;
-        // clip-path: circle(40%);
+        object-fit: contain;
       }
     }
-    .card-body {
-      background: $lightBackground2;
-      padding: 15px;
-      border-radius: 7px;
-      width: 90%;
-      margin-bottom: 15px;
-      .body-header {
+    .project-body {
+      padding: 10px;
+      width: 100%;
+      .project-header {
         display: flex;
         border-radius: 6px;
         padding: 10px;
         .title {
-          width: 90% !important;
+          width: 100% !important;
           .card-title {
-            font-weight: 500;
-            letter-spacing: 1.5px;
-            font-size: 18px;
+            font-weight: 700 !important;
+            letter-spacing: 1px !important;
+            font-size: 16px !important;
           }
           .place {
-            color: $subTitle !important;
-            font-weight: 400;
-            font-size: 16px;
+            color: $cardSubtitle !important;
+            font-weight: 600;
+            font-size: 14px;
             letter-spacing: 1px;
-            margin: 0;
-            padding: 0;
           }
           .summary {
-            color: $linkedin !important;
-            font-weight: 300;
+            color: $subTitle !important;
+            font-weight: 500;
             font-size: 14px;
-            // margin: 0;
-            padding: 0;
             // letter-spacing: 1px;
           }
         }
-        .duration-div {
-          width: 20% !important;
-          .duration {
-            background-color: $cardBackgroundColor1 !important;
-            color: $githubProfileCardBorder !important;
+        .skills-div {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px;
+          background-color: #f8f9fa;
+          border-radius: 8px;
+          p {
+            // padding-bottom: 10px !important;
+            background-color: $skillsColor;
+            padding: 8px 12px !important;
+            // background-color: #007bff; /* Primary color background */
+            color: $lightBackground1;
+            border-radius: 4px;
+            font-size: 14px;
             font-weight: 500;
-            font-size: 14px !important;
+            text-align: center;
+            margin: 0 !important;
+          }
+        }
+        .duration-div {
+          padding-top: 10px;
+          .duration {
+            background-color: $cardBackgroundColor2 !important;
+            color: $textColor2 !important;
+            font-weight: 700;
+            font-size: 14px;
             padding: 10px;
             border-radius: 5px;
-            float: right;
+            float: right !important;
           }
-        }
-        @media (max-width: 768px) {
-          .duration-div {
-            width: 80% !important;
-            .duration {
-              background-color: $cardBackgroundColor1 !important;
-              color: $githubProfileCardBorder !important;
-              font-weight: 500;
-              font-size: 14px !important;
-              padding: 10px;
-              border-radius: 5px;
-              float: left;
-            }
-          }
-        }
-        .content-list {
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-      }
-      .skills-div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        p {
-          margin: 0 !important;
-          padding: 10px !important;
-          color: $skillsColor;
         }
       }
     }
-  }
-}
-
-@media (max-width: 768px) {
-  .body-header,
-  .degree-card {
-    flex-direction: column !important;
-  }
-  .card-body {
-    width: 100% !important;
-  }
-
-  .title {
-    width: 100% !important;
-    .card-title {
-      letter-spacing: 1px !important;
-      font-weight: 300 !important;
-      font-size: 17px !important;
-    }
-  }
-
-  .education-container .educations-body .card-body .body-header .duration-div {
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
   }
 }
