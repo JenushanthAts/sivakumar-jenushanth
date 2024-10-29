@@ -2,20 +2,21 @@
 
 .education-container {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
+  padding-top: 40px;
 
   .educations-header {
-    font-size: 40px !important;
+    // font-size: 40px !important;
     color: $faceBook;
 
-    @media (max-width: 320px) {
-      font-size: 20px !important;
-    }
+    // @media (max-width: 320px) {
+    //   font-size: 20px !important;
+    // }
   }
   .educations-body {
     display: grid;
     grid-template-columns: 1fr 1fr !important;
-    gap: 2rem;
+    gap: 3rem;
     width: 90%;
     margin: 0 auto;
     @media (max-width: 992px) {
@@ -26,7 +27,6 @@
       width: 100% !important;
       background: $lightBackground2;
       flex-direction: row !important;
-      // margin-bottom: 15px;
       align-items: flex-start !important;
       border-radius: 8px;
     }
@@ -40,7 +40,6 @@
     .card-body {
       padding: 10px;
       width: 100%;
-      // margin: 10px;
       .body-header {
         display: flex;
         border-radius: 6px;
@@ -48,7 +47,6 @@
         .title {
           width: 100% !important;
           .card-title {
-            // color: $skillsColor !important;
             font-weight: 700 !important;
             letter-spacing: 1px !important;
             font-size: 16px !important;

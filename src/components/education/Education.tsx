@@ -20,9 +20,7 @@ const Education = () => (
           <div className="card-body">
             <div className="body-header">
               <div className="title">
-                <h2 className="card-title" style={{ color: "rgb(20, 33, 61)" }}>
-                  {education.title}
-                </h2>
+                <h2 className="card-title">{education.title}</h2>
                 <p className="institute">{education.institute}</p>
                 <p className="card-subtitle">{education.location}</p>
                 {/* <p className="card-subtitle">{education.duration}</p> */}
