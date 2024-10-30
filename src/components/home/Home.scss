@@ -1,25 +1,15 @@
 @import "../../styles/globalColor.scss";
 
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
-}
 .greet-main {
   width: 90%;
-  padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
 }
 
 .greeting-main {
-  display: flex;
-}
-
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
 }
 .button-greeting-div {
   display: flex;
@@ -35,7 +25,6 @@
   font-size: 30px;
   letter-spacing: 0.5px;
   color: $appHeaderBG;
-  // line-height: 0px !important;
 }
 
 .greeting-text-p {
@@ -47,9 +36,13 @@
   color: $cardSubtitle;
 }
 
-.greeting-image-div > * {
+.greeting-image-div {
+  margin-top: 20px;
   max-width: 100%;
-  height: auto;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
 .portfolio-repo-btn-div {

@@ -30,7 +30,13 @@ const Home = () => {
           </div>
         </div>
         <div className="greeting-image-div">
-          <img alt="Jenushanth, Web developer" src={jenushanth} />
+          <img
+            alt="Jenushanth, Web developer"
+            src={jenushanth}
+            width={"100%"}
+            // height={700}
+            loading="eager"
+          />
         </div>
       </div>
     </div>

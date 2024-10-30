@@ -60,8 +60,8 @@ export const ExperienceData = [
     period: "Oct 2021 - Oct 2022",
     position: "Associate Full Stack Engineer",
     summary: [
-      "Streamlined Insurance Policy Application System:} Gathered and analyzed client requirements, translating designs and wireframes into high-quality code for a comprehensive insurance policy application system",
-      "Intelligent AI Chatbot:} Led the design and implementation of a customizable AI chatbot, focusing on intelligent interaction and seamless integration, resulting in enhanced customer service capabilities",
+      "Streamlined Insurance Policy Application System: Gathered and analyzed client requirements, translating designs and wireframes into high-quality code for a comprehensive insurance policy application system",
+      "Intelligent AI Chatbot: Led the design and implementation of a customizable AI chatbot, focusing on intelligent interaction and seamless integration, resulting in enhanced customer service capabilities",
     ],
     technologies: [
       "TypeScript",
