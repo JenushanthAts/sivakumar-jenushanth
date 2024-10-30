@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/sivakumar-jenushanth/static/css/main.a6f07179.css",
-    "main.js": "/sivakumar-jenushanth/static/js/main.99e27031.js",
+    "main.css": "/sivakumar-jenushanth/static/css/main.aa9d28b0.css",
+    "main.js": "/sivakumar-jenushanth/static/js/main.ee39874d.js",
+    "static/media/jenushanth.webp": "/sivakumar-jenushanth/static/media/jenushanth.e836adf0af5db58d204c.webp",
     "static/media/kaayalTekLogo.webp": "/sivakumar-jenushanth/static/media/kaayalTekLogo.33987be8e0f9692a4ab5.webp",
-    "static/media/jenushanth.webp": "/sivakumar-jenushanth/static/media/jenushanth.38ee34c87b336fcc7162.webp",
     "static/media/IELTS.webp": "/sivakumar-jenushanth/static/media/IELTS.35c9ca8443f7f144f07f.webp",
     "static/media/zoneCelon.webp": "/sivakumar-jenushanth/static/media/zoneCelon.1efddbc76403eb86da88.webp",
     "static/media/School.webp": "/sivakumar-jenushanth/static/media/School.82adb499d110975401f2.webp",
@@ -41,11 +41,11 @@
     "static/media/windows.svg": "/sivakumar-jenushanth/static/media/windows.feda7ca0dcb55f66f1439c3496d5bcea.svg",
     "static/media/javascript.svg": "/sivakumar-jenushanth/static/media/javascript.4e191ced82f7d9fb6e572e1600298643.svg",
     "static/media/dialogflow.svg": "/sivakumar-jenushanth/static/media/dialogflow.45479e289d0a24e7c0be8d780c2f111a.svg",
-    "main.a6f07179.css.map": "/sivakumar-jenushanth/static/css/main.a6f07179.css.map",
-    "main.99e27031.js.map": "/sivakumar-jenushanth/static/js/main.99e27031.js.map"
+    "main.aa9d28b0.css.map": "/sivakumar-jenushanth/static/css/main.aa9d28b0.css.map",
+    "main.ee39874d.js.map": "/sivakumar-jenushanth/static/js/main.ee39874d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6f07179.css",
-    "static/js/main.99e27031.js"
+    "static/css/main.aa9d28b0.css",
+    "static/js/main.ee39874d.js"
   ]
 }
