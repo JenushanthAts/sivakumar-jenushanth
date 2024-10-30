@@ -8,9 +8,13 @@ const Skills = () => {
       <h1 className="text-center">Skills</h1>
       <div className="skills-div">
         {SkillLists.map((ele, index) => (
-          <div key={index}>
-            <img src={ele.logo} alt={ele.name} loading="eager" />
-            <span>{ele.name}</span>
+          <div key={index} className="skills-card">
+            <div className="skills-img">
+              <img src={ele.logo} alt={ele.name} loading="eager" />
+            </div>
+            <div className="skills-bod">
+              <span>{ele.name}</span>
+            </div>
           </div>
         ))}
       </div>
