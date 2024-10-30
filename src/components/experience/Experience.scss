@@ -14,7 +14,7 @@
   }
   .timeline-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 15px;
     position: relative;
     border-radius: 10px;
@@ -22,7 +22,7 @@
     background: $lightBackground2;
   }
   .timeline-logo {
-    width: 20% !important;
+    width: 10% !important;
     margin-right: 20px !important;
     flex-shrink: 0 !important;
 
@@ -39,7 +39,6 @@
       .timeline-logo {
         display: flex !important;
         width: 25% !important;
-        display: block;
         margin-bottom: 10px !important;
       }
     }
@@ -70,6 +69,7 @@
       margin-top: 10px;
       font-size: 1rem;
       color: $githubRepoCardColor;
+      text-align: justify !important;
     }
   }
 }
