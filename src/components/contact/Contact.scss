@@ -9,44 +9,54 @@
   h1 {
     color: $faceBook !important;
     font-weight: 600 !important;
-    margin: 0% !important;
   }
-  p {
-    font-size: 1.2rem !important;
-    color: $cardSubtitle !important;
-  }
-  .icon-btn i {
-    border-radius: 2.6rem;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1.3rem;
-    height: 2.6rem;
-    line-height: 2.6rem;
-    margin: 0 5px 10px;
-    position: relative;
-    text-align: center;
-    transition: 0.2s ease-in;
-    -webkit-user-select: none;
-    user-select: none;
-    width: 2.6rem;
-  }
-  .mobile i {
-    background-color: $google;
-  }
-  .gmail i {
-    background-color: $gitlab;
-  }
-  .github i {
-    background-color: $github;
-  }
-  .linkedin i {
-    background-color: $linkedin;
-  }
-  .coding i {
-    background-color: $hackeRank;
-  }
-  .location i {
-    background-color: $darkBoxShadow;
+  .contact-body {
+    background: $linkedin;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    p {
+      font-size: 1rem !important;
+      color: $lightBackground1 !important;
+      font-weight: 400 !important;
+      span {
+        color: $gitlab;
+        font-weight: 600 !important;
+      }
+    }
+    .icon-btn i {
+      border-radius: 2.6rem;
+      color: $darkBoxShadow2;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1.3rem;
+      height: 2.6rem;
+      line-height: 2.6rem;
+      margin: 0 5px 10px;
+      position: relative;
+      text-align: center;
+      transition: 0.2s ease-in;
+      -webkit-user-select: none;
+      user-select: none;
+      width: 2.6rem;
+    }
+    .mobile i {
+      background-color: $google;
+    }
+    .gmail i {
+      background-color: $darkGreen;
+    }
+    .github i {
+      background-color: $github;
+    }
+    .linkedin i {
+      background-color: $twitter;
+    }
+    .coding i {
+      background-color: $instagram;
+    }
+    .location i {
+      background-color: $darkBoxShadow;
+    }
   }
 }
