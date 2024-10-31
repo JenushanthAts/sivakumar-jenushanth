@@ -19,7 +19,7 @@ const Home = () => {
             <h2 className="greeting-nickname">
               Full stack developer | 3+ years Experience
             </h2>
-            <p className="greeting-text-p subTitle">
+            <p className="text-justify greeting-text-p subTitle">
               Software Engineer with a track record of optimizing backend
               performance by 40%, enhancing frontend responsiveness, Delivering
               100% on-time completion and a 15% reduction in operational costs.
