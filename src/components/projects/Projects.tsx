@@ -11,28 +11,37 @@ const Projects = () => {
       <div className="projects-body">
         {PrjectsData.map((project, index: number) => (
           <div className="project-card" key={index}>
-            <div className="project-img">
-              <img src={project.logo} alt={project.heading} loading="eager" />
+            <div className="project-header">
+              <div className="project-img">
+                <img src={project.logo} alt={project.heading} loading="eager" />
+              </div>
+              <div className="project-title">
+                <a
+                  className="card-title"
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {project.heading}
+                </a>
+                <h4 className="place">{project.place}</h4>
+                <div className="duration-div">
+                  <h3 className="duration">{project.period}</h3>
+                </div>
+              </div>
             </div>
             <div className="project-body">
-              <div className="project-header">
-                <div className="title">
-                  <h2 className="card-title">{project.heading}</h2>
-                  <p className="place">{project.place}</p>
-                  {project.summary.map((ele, i) => (
-                    <p className="summary" key={index}>
-                      {ele}
-                    </p>
-                  ))}
+              <div className="title">
+                {project.summary.map((ele, i) => (
+                  <p className="summary" key={index}>
+                    {ele}
+                  </p>
+                ))}
 
-                  <div className="skills-div">
-                    {project.technologies.map((ele, index) => (
-                      <p key={index}>{ele}</p>
-                    ))}
-                  </div>
-                  <div className="duration-div">
-                    <h3 className="duration">{project.period}</h3>
-                  </div>
+                <div className="skills-div">
+                  {project.technologies.map((ele, index) => (
+                    <p key={index}>{ele}</p>
+                  ))}
                 </div>
               </div>
             </div>

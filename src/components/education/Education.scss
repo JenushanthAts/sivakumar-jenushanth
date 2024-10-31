@@ -32,9 +32,11 @@
     }
 
     .card-img {
+      padding: 10px;
       img {
         width: 100%;
-        clip-path: circle(40%);
+        border-radius: 8px;
+        // clip-path: circle(40%);
       }
     }
     .card-body {
