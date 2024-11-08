@@ -1,5 +1,5 @@
 import jaffnaLogo from "../assets/jaffnaUni.webp";
-import koddaikallarLogo from "../assets/school.webp";
+import koddaikallarLogo from "../assets/School.webp";
 
 export const EducationData = [
   {
