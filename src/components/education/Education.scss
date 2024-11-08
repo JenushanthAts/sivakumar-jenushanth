@@ -7,11 +7,8 @@
 
   .educations-header {
     // font-size: 40px !important;
-    color: $faceBook;
-
-    // @media (max-width: 320px) {
-    //   font-size: 20px !important;
-    // }
+    color: $darkScreen;
+    font-weight: bold;
   }
   .educations-body {
     display: grid;
@@ -54,25 +51,23 @@
             font-size: 16px !important;
           }
           .institute {
-            color: $cardSubtitle !important;
+            color: $subTitle !important;
             font-weight: 600;
             font-size: 14px;
             letter-spacing: 1px;
           }
           .card-subtitle {
             color: $subTitle !important;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 14px;
             letter-spacing: 1px;
           }
         }
         .duration-div {
           .duration {
-            background-color: $cardBackgroundColor2 !important;
-            color: $textColor2 !important;
-            font-weight: 700;
+            color: $subTitle !important;
+            font-weight: 400;
             font-size: 14px;
-            padding: 10px;
             margin: 0;
             border-radius: 5px;
             float: left !important;

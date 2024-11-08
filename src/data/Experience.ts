@@ -8,7 +8,9 @@ export const ExperienceData = [
     companyName: "Avonet Technologies",
     logo: `${avonetLogo}`,
     period: "May 2023 - Present",
+    location: "Australia . Remote",
     position: "Full Stack Engineer",
+    companyWeb: "https://avonet.com.au/",
     summary: [
       "Worked on the EuRail booking platform, an online system for booking rail travel across multiple routes and services to provide a comprehensive travel solution",
       "Integrated external APIs for route selection and UI modules, improving functionality and boosting user satisfaction by 20%, resulting in a 15% increase in booking conversions",
@@ -34,6 +36,8 @@ export const ExperienceData = [
     logo: `${arLogo}`,
     period: "Nov 2022 - May 2023",
     position: "Full Stack Engineer",
+    location: "Australia . Remote",
+    companyWeb: "https://www.arinnovate.io/",
     summary: [
       "Developed a platform enabling global employee recruitment, catering to diverse industries",
       "Increased user base interaction by 50% within the first three months of launch due to enhanced UI/UX and performance improvements",
@@ -59,6 +63,8 @@ export const ExperienceData = [
     logo: `${kaayalTekLogo}`,
     period: "Oct 2021 - Oct 2022",
     position: "Associate Full Stack Engineer",
+    location: "Batticaloa, Srilanka . Onsite",
+    companyWeb: "https://www.kaayaltek.com/",
     summary: [
       "Streamlined Insurance Policy Application System: Gathered and analyzed client requirements, translating designs and wireframes into high-quality code for a comprehensive insurance policy application system",
       "Intelligent AI Chatbot: Led the design and implementation of a customizable AI chatbot, focusing on intelligent interaction and seamless integration, resulting in enhanced customer service capabilities",
@@ -83,6 +89,8 @@ export const ExperienceData = [
     logo: `${apptimusLogo}`,
     period: "Jan 2020 - Jul 2020",
     position: "Intern Full Stack Engineer",
+    location: "Jaffna, Srilanka . Onsite",
+    companyWeb: "https://apptimustech.com/",
     summary: [
       "Developed and maintained a high-performance web application, increasing traffic by 30% and enhancing user experience, which led to a 25% increase in user engagement and a 15% boost in average session duration",
     ],

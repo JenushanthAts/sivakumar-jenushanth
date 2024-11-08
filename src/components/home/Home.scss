@@ -24,7 +24,7 @@
 .greeting-nickname {
   font-size: 30px;
   letter-spacing: 0.5px;
-  color: $appHeaderBG;
+  color: $darkScreen;
 }
 
 .greeting-text-p {
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: flex-start;
   button {
-    background-color: $linkedin; /* Green */
+    background-color: $darkScreen; /* Green */
     border: none;
     color: white;
     padding: 16px 32px;
