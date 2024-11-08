@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/sivakumar-jenushanth/static/css/main.0a996dc1.css",
-    "main.js": "/sivakumar-jenushanth/static/js/main.9622fe05.js",
+    "main.css": "/sivakumar-jenushanth/static/css/main.e47c08e0.css",
+    "main.js": "/sivakumar-jenushanth/static/js/main.cf79fc65.js",
     "static/media/jenushanth.webp": "/sivakumar-jenushanth/static/media/jenushanth.0a4574480e4a23bf28ee.webp",
     "static/media/kaayalTekLogo.webp": "/sivakumar-jenushanth/static/media/kaayalTekLogo.9c9553d18f81e41936b3.webp",
     "static/media/nestjs.svg": "/sivakumar-jenushanth/static/media/nestjs.ef4268f5bb32b733c0f23bf56867a659.svg",
-    "static/media/school.webp": "/sivakumar-jenushanth/static/media/school.c090b34ebe30bc18a1dc.webp",
+    "static/media/School.webp": "/sivakumar-jenushanth/static/media/School.c090b34ebe30bc18a1dc.webp",
     "static/media/IELTS.webp": "/sivakumar-jenushanth/static/media/IELTS.6f006c9f68bce9715214.webp",
     "static/media/zoneCelon.webp": "/sivakumar-jenushanth/static/media/zoneCelon.2ebd31b4948fe0931671.webp",
     "static/media/Postman.svg": "/sivakumar-jenushanth/static/media/Postman.6936833bc99b5a07559a3cfbb41db20f.svg",
@@ -41,11 +41,11 @@
     "static/media/windows.svg": "/sivakumar-jenushanth/static/media/windows.feda7ca0dcb55f66f1439c3496d5bcea.svg",
     "static/media/javascript.svg": "/sivakumar-jenushanth/static/media/javascript.4e191ced82f7d9fb6e572e1600298643.svg",
     "static/media/dialogflow.svg": "/sivakumar-jenushanth/static/media/dialogflow.45479e289d0a24e7c0be8d780c2f111a.svg",
-    "main.0a996dc1.css.map": "/sivakumar-jenushanth/static/css/main.0a996dc1.css.map",
-    "main.9622fe05.js.map": "/sivakumar-jenushanth/static/js/main.9622fe05.js.map"
+    "main.e47c08e0.css.map": "/sivakumar-jenushanth/static/css/main.e47c08e0.css.map",
+    "main.cf79fc65.js.map": "/sivakumar-jenushanth/static/js/main.cf79fc65.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a996dc1.css",
-    "static/js/main.9622fe05.js"
+    "static/css/main.e47c08e0.css",
+    "static/js/main.cf79fc65.js"
   ]
 }
