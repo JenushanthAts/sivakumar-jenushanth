@@ -3,18 +3,15 @@
 .contact-section {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin: 0px auto;
-  margin-top: 4rem;
+  background: $darkScreen;
+  margin-top: 5rem;
   h1 {
-    color: $darkScreen !important;
+    color: $lightBackground1 !important;
     font-weight: bold !important;
   }
   .contact-body {
-    background: $darkScreen;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
+    width: 90%;
+    margin: 0 auto;
     p {
       font-size: 1rem !important;
       line-height: 1.4rem;

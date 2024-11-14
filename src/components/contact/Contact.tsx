@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="contact-section">
       <h1 className="text-center">Reach out to me</h1>
       <div className="contact-body">
-        <p>
+        <p className="text-justify">
           I’m available on almost every social media platform! Feel free to
           reach out to me, and I’ll respond within 24 hours. Whether you’re
           looking for guidance, collaboration, or just a conversation about

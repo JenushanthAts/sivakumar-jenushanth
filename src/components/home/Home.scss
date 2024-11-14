@@ -2,68 +2,112 @@
 
 .greet-main {
   width: 90%;
+  padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
 }
 
 .greeting-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
+  display: flex;
 }
+
+.subTitle {
+  color: $subTitle !important;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.greeting-main > * {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+.empty-div {
+  margin-bottom: 40px;
+}
+
 .button-greeting-div {
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+.download-link-button {
+  text-decoration: none;
 }
 
 .greeting-text {
-  margin-top: 80px;
-  font-size: 70px;
-}
-
-.greeting-nickname {
-  font-size: 30px;
-  letter-spacing: 0.5px;
-  color: $darkScreen;
+  font-size: 50px;
+  line-height: 1.1;
+  color: $textColor !important;
 }
 
 .greeting-text-p {
-  background: $lightBackground2;
   font-size: 20px;
-  letter-spacing: 1px;
-  margin-right: 0px;
-  padding: 10px;
-  color: $cardSubtitle;
+  line-height: 30px;
 }
 
-.greeting-image-div {
-  margin-top: 20px;
+.greeting-image-div > img {
   max-width: 100%;
-  img {
-    width: 100%;
-    border-radius: 10px;
-  }
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
 }
 
 .portfolio-repo-btn-div {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  // justify-content: center;
   button {
     background-color: $darkScreen; /* Green */
     border: none;
-    color: white;
+    color: $gitlab;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    font-weight: 500;
     transition-duration: 0.4s;
     cursor: pointer;
     text-transform: uppercase;
   }
 }
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
@@ -76,41 +120,20 @@
 @media (max-width: 768px) {
   .greeting-text {
     font-size: 30px;
-    margin-top: 0px;
     text-align: center;
-  }
-  .greeting-nickname {
-    font-size: 25px;
-    text-align: center;
-    // line-height: 2px !important;
   }
   .greeting-text-p {
     font-size: 16px;
-    margin-right: 0px;
     line-height: normal;
     text-align: center;
   }
   .greeting-main {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
-  .portfolio-repo-btn-div {
-    justify-content: center !important;
-  }
-}
 
-.typed-out {
-  overflow: hidden;
-  // border-right: 0.15em solid $gitlab;
-  white-space: nowrap;
-  animation: typing 4s steps(40, end) infinite, blink 0.75s step-end infinite;
-  font-size: 1.6rem;
-  width: 0;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 70%;
+  .portfolio-repo-btn-div {
+    width: 100%;
+    justify-content: center;
   }
 }

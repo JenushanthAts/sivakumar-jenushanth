@@ -81,5 +81,18 @@
       font-weight: 400;
       text-align: justify !important;
     }
+    .technologies {
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        padding: 10px !important;
+        line-height: 16px !important;
+        border-radius: 10px !important;
+        margin: 0 10px 8px 0 !important;
+        padding-right: 10px !important;
+        background: $tagBgColor !important;
+        color: $textColorDark2 !important;
+      }
+    }
   }
 }
