@@ -29,6 +29,11 @@ const Experience = () => {
             {ele.summary.map((ele) => (
               <p>{ele}</p>
             ))}
+            <div className="technologies">
+              {ele.technologies.map((ele, index) => (
+                <span key={index}>{ele}</span>
+              ))}
+            </div>
           </div>
         </div>
       ))}
