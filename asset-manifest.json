@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sivakumar-jenushanth/static/css/main.e47c08e0.css",
-    "main.js": "/sivakumar-jenushanth/static/js/main.cf79fc65.js",
-    "static/media/jenushanth.webp": "/sivakumar-jenushanth/static/media/jenushanth.0a4574480e4a23bf28ee.webp",
+    "main.css": "/sivakumar-jenushanth/static/css/main.36e9e1b8.css",
+    "main.js": "/sivakumar-jenushanth/static/js/main.f9c89e33.js",
+    "static/media/jenushanth.png": "/sivakumar-jenushanth/static/media/jenushanth.0480e95ba1434f45fda4.png",
     "static/media/kaayalTekLogo.webp": "/sivakumar-jenushanth/static/media/kaayalTekLogo.9c9553d18f81e41936b3.webp",
     "static/media/nestjs.svg": "/sivakumar-jenushanth/static/media/nestjs.ef4268f5bb32b733c0f23bf56867a659.svg",
     "static/media/School.webp": "/sivakumar-jenushanth/static/media/School.c090b34ebe30bc18a1dc.webp",
@@ -41,11 +41,11 @@
     "static/media/windows.svg": "/sivakumar-jenushanth/static/media/windows.feda7ca0dcb55f66f1439c3496d5bcea.svg",
     "static/media/javascript.svg": "/sivakumar-jenushanth/static/media/javascript.4e191ced82f7d9fb6e572e1600298643.svg",
     "static/media/dialogflow.svg": "/sivakumar-jenushanth/static/media/dialogflow.45479e289d0a24e7c0be8d780c2f111a.svg",
-    "main.e47c08e0.css.map": "/sivakumar-jenushanth/static/css/main.e47c08e0.css.map",
-    "main.cf79fc65.js.map": "/sivakumar-jenushanth/static/js/main.cf79fc65.js.map"
+    "main.36e9e1b8.css.map": "/sivakumar-jenushanth/static/css/main.36e9e1b8.css.map",
+    "main.f9c89e33.js.map": "/sivakumar-jenushanth/static/js/main.f9c89e33.js.map"
   },
   "entrypoints": [
-    "static/css/main.e47c08e0.css",
-    "static/js/main.cf79fc65.js"
+    "static/css/main.36e9e1b8.css",
+    "static/js/main.f9c89e33.js"
   ]
 }
