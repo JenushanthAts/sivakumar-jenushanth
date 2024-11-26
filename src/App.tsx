@@ -35,7 +35,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="main">
       <Navbar scrollToSection={scrollToSection} />
       <div ref={homeRef}>
         <Home />

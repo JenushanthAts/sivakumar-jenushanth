@@ -1,11 +1,10 @@
 @import "../../styles/globalColor.scss";
 
-.timeline-container {
+.experience-container {
   display: flex;
+  width: 85%;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  width: 90%;
+  gap: 3rem;
   margin: 0 auto;
 
   h1 {
@@ -32,6 +31,7 @@
       height: 100%;
     }
   }
+
   @media (max-width: 768px) {
     .timeline-item {
       flex-direction: column;
@@ -46,6 +46,7 @@
   }
 
   .timeline-details {
+    padding: 0 1rem;
     a {
       font-size: 1.3rem;
       margin: 0;
