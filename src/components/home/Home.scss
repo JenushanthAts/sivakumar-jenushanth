@@ -1,7 +1,7 @@
 @import "../../styles/globalColor.scss";
 
 .greet-main {
-  width: 90%;
+  width: 85%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
@@ -49,11 +49,11 @@
 }
 
 .greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
+  max-width: 90%;
+  height: 75%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .wave-emoji {
@@ -135,5 +135,15 @@
   .portfolio-repo-btn-div {
     width: 100%;
     justify-content: center;
+  }
+  .greeting-main > * {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .greeting-image-div > img {
+    max-width: 80%;
+    height: 60%;
+    margin-top: 5%;
   }
 }

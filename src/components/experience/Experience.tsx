@@ -8,7 +8,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="timeline-container">
+    <div className="experience-container">
       <h1 className="text-center">Experience</h1>
       {ExperienceData.map((ele, index) => (
         <div className="timeline-item" key={index}>

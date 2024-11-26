@@ -4,12 +4,10 @@ import { EducationData } from "../../data/Education";
 
 const Education = () => (
   <div className="education-container" id="educations">
-    <div className="educations-header-div">
-      <h1 className="educations-header text-center">Educations</h1>
-    </div>
-    <div className="educations-body">
+    <h1 className="educations-header text-center">Educations</h1>
+    <div className="educations-div">
       {EducationData.map((education, index: number) => (
-        <div className="degree-card" key={index}>
+        <div className="educations-body" key={index}>
           <div className="card-img">
             <img
               src={education.logo}
@@ -23,7 +21,6 @@ const Education = () => (
                 <h2 className="card-title">{education.title}</h2>
                 <p className="institute">{education.institute}</p>
                 <p className="card-subtitle">{education.location}</p>
-                {/* <p className="card-subtitle">{education.duration}</p> */}
                 <div className="duration-div">
                   <h3 className="duration">{education.duration}</h3>
                 </div>
