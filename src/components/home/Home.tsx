@@ -10,44 +10,13 @@ const Home = () => {
       "_blank"
     );
   };
-  // return (
-  //   <div className="greet-main" id="greeting">
-  //     <div className="greeting-text-div">
-  //       <h1 className="greeting-text">I'm Jenushanth</h1>
-  //       <h2 className="greeting-nickname">
-  //         Full stack developer | 3+ years Experience
-  //       </h2>
-  //       <p className="text-justify greeting-text-p subTitle">
-  //         Software Engineer with a track record of optimizing backend
-  //         performance by 40%, enhancing frontend responsiveness, Delivering 100%
-  //         on-time completion and a 15% reduction in operational costs.
-  //       </p>
-  //       <div className="portfolio-repo-btn-div">
-  //         <button onClick={downLoadCv}>Download Cv</button>
-  //       </div>
 
-  //       <div className="greeting-image-div">
-  //         <img
-  //           alt="Jenushanth, Web developer"
-  //           src={jenushanth}
-  //           // width={"100%"}
-  //           // height={600}
-  //           // height={700}
-  //           loading="eager"
-  //         />
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
   return (
     <div className="greet-main" id="greeting">
       <div className="greeting-main">
         <div className="greeting-text-div">
           <div>
-            <h1 className={"greeting-text"}>
-              I'm Jenushanth
-              {/* <span className="wave-emoji">👋</span> */}
-            </h1>
+            <h1 className={"greeting-text"}>I'm Jenushanth</h1>
             <p className={"dark-mode greeting-text-p"}>
               🌟 Passionate Full Stack Developer | 3+ years Experience
             </p>
