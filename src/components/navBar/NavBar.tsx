@@ -6,69 +6,6 @@ interface NavbarProps {
 }
 
 const Navbar: FC<NavbarProps> = ({ scrollToSection }) => {
-  // const [isOpen, setIsOpen] = useState(false);
-
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen);
-  // };
-
-  // return (
-  //   <nav className="navbar">
-  //     <div className="navbar__logo">
-  //       <h1>Sivakumar Jenushanth</h1>
-  //     </div>
-  //     <div className="desktopMenu">
-  //       <a
-  //         href="#home"
-  //         onClick={() => scrollToSection("home")}
-  //         className="desktopMenuListItem"
-  //       >
-  //         Home
-  //       </a>
-  //       <a
-  //         href="#experience"
-  //         onClick={() => scrollToSection("experience")}
-  //         className="desktopMenuListItem"
-  //       >
-  //         Experience
-  //       </a>
-  //       <a
-  //         href="#education"
-  //         onClick={() => scrollToSection("education")}
-  //         className="desktopMenuListItem"
-  //       >
-  //         Education
-  //       </a>
-  //       <a
-  //         href="#services"
-  //         onClick={() => scrollToSection("projects")}
-  //         className="desktopMenuListItem"
-  //       >
-  //         Projects
-  //       </a>
-  //       <a
-  //         href="#skills"
-  //         onClick={() => scrollToSection("skills")}
-  //         className="desktopMenuListItem"
-  //       >
-  //         Skills
-  //       </a>
-  //       <a
-  //         href="#contact"
-  //         onClick={() => scrollToSection("contact")}
-  //         className="desktopMenuListItem"
-  //       >
-  //         Contact
-  //       </a>
-  //     </div>
-  //     <div className="navbar__toggle" onClick={toggleMenu}>
-  //       <span className="navbar__toggle-bar"></span>
-  //       <span className="navbar__toggle-bar"></span>
-  //       <span className="navbar__toggle-bar"></span>
-  //     </div>
-  //   </nav>
-  // );
-
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -77,14 +14,17 @@ const Navbar: FC<NavbarProps> = ({ scrollToSection }) => {
 
   const handleClick = (navMenu: string) => {
     scrollToSection(navMenu);
-    if (window.innerWidth <= 1150) {
+    if (window.innerWidth <= 992) {
       setShowMenu(false);
     }
   };
   return (
     <header className="header">
       <nav className="nav container">
-        <h1 className="nav__logo">Sivakumar Jenushanth</h1>
+        <h1 className="nav__logo">
+          Sivakumar
+          <span> Jenushanth</span>
+        </h1>
 
         <div
           className={`nav__menu ${showMenu ? "show-menu" : ""}`}
