@@ -1,114 +1,162 @@
 @import "../../styles/globalColor.scss";
 
 .projects-container {
-  padding-top: 3rem;
-  display: grid;
-  gap: 2rem;
+  margin-top: rem;
+  width: 85%;
+  margin: 0 auto;
   h1 {
     color: $darkScreen;
     font-weight: bold !important;
   }
-  .project-header {
-    color: $faceBook;
-    display: flex;
-    padding: 10px;
-    .project-img {
-      width: 25% !important;
-      padding: 10px;
-      @media (max-width: 640px) {
-        width: 30% !important;
-      }
-      img {
-        max-width: 100%;
-        border-radius: 8px;
-        object-fit: contain;
-      }
-    }
-    .project-title {
-      width: 100%;
-      margin-top: 10px;
-      // border-bottom: 4px double $darkScreen;
-      .card-title {
-        font-size: 1.2rem;
-        color: $faceBook;
-        text-decoration: none;
-        font-weight: 600;
-      }
-      h4 {
-        font-size: 1rem;
-        // margin: 10px 0;
-        font-weight: 400;
-      }
-      .duration-div {
-        // padding-top: 5px;
-        .duration {
-          // background-color: $cardBackgroundColor2 !important;
-          color: $subTitle !important;
-          font-weight: 500;
-          font-size: 14px;
-          margin: 0;
-          border-radius: 5px;
-        }
-      }
+}
+
+.projects-div {
+  background: $darkScreen;
+  border-radius: 2px;
+  position: relative;
+  padding: 2em 0;
+  margin: 2em 0;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    height: 100%;
+    width: 4px;
+    background: $stackoverflow;
+  }
+
+  @media (min-width: 1170px) {
+    margin: 3em 0;
+
+    &::before {
+      left: 50%;
+      margin-left: -2px;
     }
   }
-  .projects-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 2rem;
-    width: 85%;
-    margin: 0 auto;
-    @media (max-width: 992px) {
-      grid-template-columns: 1fr !important;
+}
+
+.list {
+  position: relative;
+  margin: 1rem 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1170px) {
+    margin: 9rem 0;
+  }
+
+  .timeline-img {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $stackoverflow;
+    box-shadow: 0 0 0 4px $stackoverflow, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+      0 3px 0 4px rgba(0, 0, 0, 0.05);
+
+    @media (min-width: 1170px) {
+      left: 50%;
+      margin-left: -15px;
     }
-    .project-card {
-      background: $lightBackground2;
-      border-radius: 8px;
+  }
+
+  .timeline-content {
+    position: relative;
+    margin: 60px;
+    background: $timeLineContentBgColor;
+    border-radius: 2px;
+    padding: 1em;
+
+    @media (min-width: 1170px) {
+      width: 36%;
+      float: left;
+      margin: 0 5%;
     }
 
-    .project-body {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-      padding: 10px;
-      .title {
-        padding: 10px;
-        .place {
-          color: $cardSubtitle !important;
-          font-weight: 600;
-          font-size: 14px;
-        }
-        .summary {
-          color: $subTitle !important;
-          font-weight: 400;
-          font-size: 1rem;
-          color: $githubRepoCardColor;
-          text-align: justify !important;
+    h2 {
+      a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.6;
+    }
+
+    .timeline-content-info {
+      background: #2b343a;
+      padding: 5px 10px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 12px;
+      border-radius: 2px;
+
+      i {
+        margin-right: 5px;
+      }
+      .timeline-content-info-title,
+      .timeline-content-info-date {
+        width: calc(50% - 2px);
+        display: inline-block;
+      }
+      @media (max-width: 500px) {
+        .timeline-content-info-title,
+        .timeline-content-info-date {
+          display: block;
+          width: 100%;
         }
       }
-      .skills-div {
-        // display: flex;
-        // flex-wrap: wrap;
-        // gap: 10px;
-        border-radius: 8px;
-        background-color: $headerHoverBG;
-        display: grid;
-        padding: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 1rem;
-        // width: 90%;
-        // margin: 0 auto;
-        p {
-          background-color: $lightBackground1;
-          box-shadow: 5px 1px $educationCardBorder;
-          padding: 8px !important;
-          color: $faceBook;
-          border-radius: 4px;
-          font-size: 1rem;
-          font-weight: 500;
-          text-align: center;
-          margin: 0 !important;
-        }
+    }
+
+    .content-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 1em 0 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        background: #40484d;
+        border-radius: 2px;
+        padding: 5px 10px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 100%;
+      height: 0;
+      width: 0;
+      border: 7px solid transparent;
+      border-left-color: #333c42;
+
+      @media (min-width: 1170px) {
+        left: auto;
+        right: 100%;
+        border-right-color: #333c42;
+        border-left-color: transparent;
       }
     }
   }

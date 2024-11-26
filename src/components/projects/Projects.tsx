@@ -8,42 +8,38 @@ const Projects = () => {
       <div className="projects-header-div">
         <h1 className="projects-header text-center">Projects</h1>
       </div>
-      <div className="projects-body">
-        {PrjectsData.map((project, index: number) => (
-          <div className="project-card" key={index}>
-            <div className="project-header">
-              <div className="project-img">
-                <img src={project.logo} alt={project.heading} loading="eager" />
+      <div className="projects-div">
+        {PrjectsData.map((project, index) => (
+          <div className="list" key={index}>
+            <div className="timeline-img cd-picture"></div>
+            <div className="timeline-content">
+              <div>
+                <img alt={project.heading} src={project.logo} width={50} />
               </div>
-              <div className="project-title">
-                <a
-                  className="card-title"
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+              <h2>
+                <a href={project.link} target="_blank" rel="noreferrer">
                   {project.heading}
                 </a>
-                <h4 className="place">{project.place}</h4>
-                <div className="duration-div">
-                  <h3 className="duration">{project.period}</h3>
-                </div>
-              </div>
-            </div>
-            <div className="project-body">
-              <div className="title">
-                {project.summary.map((ele, i) => (
-                  <p className="summary" key={index}>
-                    {ele}
-                  </p>
-                ))}
+              </h2>
 
-                <div className="skills-div">
-                  {project.technologies.map((ele, index) => (
-                    <p key={index}>{ele}</p>
-                  ))}
-                </div>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-certificate" aria-hidden="true"></i>{" "}
+                  {project.place}
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-calendar" aria-hidden="true"></i>{" "}
+                  {project.period}
+                </span>
               </div>
+              {project.summary.map((ele, i) => (
+                <p key={i}>{ele}</p>
+              ))}
+              <ul className="content-skills">
+                {project.technologies.map((tc, idx) => (
+                  <li key={idx}>{tc}</li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
