@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sivakumar-jenushanth/static/css/main.e60f3315.css",
-    "main.js": "/sivakumar-jenushanth/static/js/main.eca536e2.js",
+    "main.css": "/sivakumar-jenushanth/static/css/main.1d90385c.css",
+    "main.js": "/sivakumar-jenushanth/static/js/main.724a1c88.js",
     "static/media/jenushanth.png": "/sivakumar-jenushanth/static/media/jenushanth.0480e95ba1434f45fda4.png",
     "static/media/kaayalTekLogo.webp": "/sivakumar-jenushanth/static/media/kaayalTekLogo.9c9553d18f81e41936b3.webp",
     "static/media/School.webp": "/sivakumar-jenushanth/static/media/School.c090b34ebe30bc18a1dc.webp",
@@ -12,11 +12,11 @@
     "static/media/arLogo.webp": "/sivakumar-jenushanth/static/media/arLogo.bf15c885df2bc00833e8.webp",
     "static/media/apptimusLogo.webp": "/sivakumar-jenushanth/static/media/apptimusLogo.cc2d9cf3157629bb7f7d.webp",
     "index.html": "/sivakumar-jenushanth/index.html",
-    "main.e60f3315.css.map": "/sivakumar-jenushanth/static/css/main.e60f3315.css.map",
-    "main.eca536e2.js.map": "/sivakumar-jenushanth/static/js/main.eca536e2.js.map"
+    "main.1d90385c.css.map": "/sivakumar-jenushanth/static/css/main.1d90385c.css.map",
+    "main.724a1c88.js.map": "/sivakumar-jenushanth/static/js/main.724a1c88.js.map"
   },
   "entrypoints": [
-    "static/css/main.e60f3315.css",
-    "static/js/main.eca536e2.js"
+    "static/css/main.1d90385c.css",
+    "static/js/main.724a1c88.js"
   ]
 }
