@@ -6,15 +6,21 @@ type TData = {
   logo: string;
   duration: string;
   location: string;
-  institute?: string;
+  subHeading?: string;
   link?: string;
   summary?: string[];
   technologies?: string[];
 };
 type TimeLineProps = {
   data: TData[];
+  imgWidth?: string | number;
+  imgHeight?: string | number;
 };
-const TimeLine: FC<TimeLineProps> = ({ data }) => {
+const TimeLine: FC<TimeLineProps> = ({
+  data,
+  imgWidth = 60,
+  imgHeight = 60,
+}) => {
   return (
     <ul className="timeline mt-3">
       {data.map((dt, index) => (
@@ -22,7 +28,12 @@ const TimeLine: FC<TimeLineProps> = ({ data }) => {
           <label className="timeline-event-icon"></label>
           <div className="timeline-event-copy">
             <div className="img-div">
-              <img src={dt.logo} alt={dt.title} width={60} height={60} />
+              <img
+                src={dt.logo}
+                alt={dt.title}
+                width={imgWidth}
+                height={imgHeight}
+              />
               <div>
                 <p>
                   <i className="fa fa-calendar" aria-hidden="true"></i>{" "}
@@ -40,7 +51,7 @@ const TimeLine: FC<TimeLineProps> = ({ data }) => {
                 {dt.title}
               </a>
             </h3>
-            {dt.institute && <h4>{dt.institute}</h4>}
+            {dt.subHeading && <h4>{dt.subHeading}</h4>}
             {dt.summary &&
               dt.summary.map((sumry, idx) => (
                 <p key={idx} className="text-justify">
