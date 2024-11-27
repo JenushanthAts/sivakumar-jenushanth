@@ -1,0 +1,74 @@
+// Variables for breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$columns: 12; // Number of columns in the grid
+$gutter-width: 1rem; // Space between columns
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+// Grid container
+.grid-container {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+// Row
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -($gutter-width / 2);
+  margin-right: -($gutter-width / 2);
+
+  > * {
+    padding-left: $gutter-width / 2;
+    padding-right: $gutter-width / 2;
+    box-sizing: border-box;
+  }
+}
+
+// Columns
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex: 0 0 #{100% / $columns * $i};
+    max-width: #{100% / $columns * $i};
+  }
+}
+
+// Responsive Columns
+@each $breakpoint, $value in $breakpoints {
+  @for $i from 1 through $columns {
+    .col-#{$breakpoint}-#{$i} {
+      @include respond-to($breakpoint) {
+        flex: 0 0 #{100% / $columns * $i};
+        max-width: #{100% / $columns * $i};
+      }
+    }
+  }
+}
+
+// Full-width column
+.col {
+  flex: 1 1 0;
+  max-width: 100%;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}

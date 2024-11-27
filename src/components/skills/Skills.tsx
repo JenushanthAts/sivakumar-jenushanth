@@ -1,22 +1,59 @@
 import React from "react";
-import "./Skills.scss";
-import { SkillLists } from "../../data/Skills";
+import Card from "../card/Card";
 
 const Skills = () => {
   return (
-    <div className="skills-container">
-      <h1 className="text-center">Skills</h1>
-      <div className="skills-div">
-        {SkillLists.map((ele, index) => (
-          <div key={index} className="skills-card">
-            <div className="skills-img">
-              <img src={ele.logo} alt={ele.name} loading="eager" />
-            </div>
-            <div className="skills-bod">
-              <span>{ele.name}</span>
-            </div>
+    <div>
+      <h1 className="text-center mt-3">Skills</h1>
+      <div className="grid-container">
+        <div className="grid-row">
+          <div className="col-xs-12 col-md-6">
+            <Card
+              title="Frond End"
+              data={[
+                "HTML5",
+                "CSS3",
+                "REACT",
+                "NEXT",
+                "REDUX",
+                "SASS",
+                "BOOTSTRAP",
+                "TAILWIND CSS",
+                "MATERIAL UI",
+              ]}
+            />
           </div>
-        ))}
+          <div className="col-xs-12 col-md-6">
+            <Card
+              title="Back End"
+              data={["NODE", "NEST", "EXPRESS", "MONGODB", "MYSQL", "DYNAMODB"]}
+            />
+          </div>
+          <div className="col-xs-12 col-md-6">
+            <Card
+              title="Programming Languages"
+              data={["TYPESCRIPT", "JAVASCRIPT", "PYTHON"]}
+            />
+          </div>
+          <div className="col-xs-12 col-md-6">
+            <Card
+              title="Tools"
+              data={[
+                "POSTMAN",
+                "BITBUCKET",
+                "GITLAB",
+                "GITHUB",
+                "GIT",
+                "DIALOGFLOW",
+                "SOCKET.IO",
+                "LINUX",
+                "WINDOWS",
+                "VS CODE",
+                "AWS",
+              ]}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
