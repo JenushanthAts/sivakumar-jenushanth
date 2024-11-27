@@ -1,0 +1,28 @@
+@import "../../styles/globalColor.scss";
+
+.card-list {
+  background-color: $timeLineContentBgColor;
+  h3 {
+    color: $textColor4;
+    padding-top: 1rem;
+    font-weight: 500;
+  }
+  .card-items {
+    font-size: 13px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+
+    li {
+      background-color: $timeLineBgColor;
+      display: inline-block;
+      padding: 10px !important;
+      color: $gitlab;
+      margin: 0.7rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+  }
+}

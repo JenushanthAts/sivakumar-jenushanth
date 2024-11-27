@@ -43,11 +43,15 @@ const App = () => {
       <div ref={experienceRef}>
         <Experience />
       </div>
-      <div ref={educationRef}>
-        <Education />
-      </div>
-      <div ref={projectsRef}>
-        <Projects />
+      <div className="grid-container">
+        <div className="grid-row">
+          <div className="col-xs-12 col-md-6 col-lg-6" ref={educationRef}>
+            <Education />
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-6" ref={projectsRef}>
+            <Projects />
+          </div>
+        </div>
       </div>
       <div ref={skillsRef}>
         <Skills />
