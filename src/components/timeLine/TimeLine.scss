@@ -1,0 +1,119 @@
+@import "../../styles/globalColor.scss";
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 4px;
+    background: $stackoverflow;
+  }
+
+  .timeline-event {
+    position: relative;
+    margin: 0;
+    padding: 20px 0 20px 40px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .timeline-event-icon {
+      position: absolute;
+      top: 20px;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 4px solid $stackoverflow;
+      border-radius: 50%;
+    }
+
+    .timeline-event-copy {
+      background: $timeLineContentBgColor;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      .img-div {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 576px) {
+          flex-direction: column;
+        }
+        img {
+          border: 1px solid $subTitle;
+          padding: 10px;
+          border-radius: 1rem;
+        }
+        div {
+          p {
+            background: $timeLineBgColor;
+            padding: 10px;
+          }
+        }
+      }
+      .thumbnail-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: $stackoverflow;
+        margin-bottom: 5px;
+        a {
+          text-decoration: none;
+          color: $stackoverflow;
+        }
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.7);
+        background-color: $timeLineBgColor;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .technologies {
+        font-size: 12px;
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+
+        li {
+          background: $timeLineBgColor;
+          display: inline-block;
+          padding: 10px;
+          color: $gitlab;
+          margin: 3px;
+          text-align: center;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}

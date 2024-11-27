@@ -4,6 +4,7 @@ import "./index.scss";
 import App from "./App";
 import "./styles/globalColor.scss";
 import "./styles/text.scss";
+import "./styles/gridSystem.scss";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
