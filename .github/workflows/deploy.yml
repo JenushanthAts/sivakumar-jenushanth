@@ -1,6 +1,7 @@
-name: Deploy Node App
+name: Deploy Node App to Github Pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main # or "master" or any branch
@@ -18,11 +19,21 @@ jobs:
         with:
           node-version: "18"
 
+      # Install Dependencies
       - name: Install Dependencies
         run: npm install
 
+      # Test the project
       - name: Run Tests
         run: npm test
 
-      - name: Deploy (Example using rsync)
-        run: echo "Deploy script here (e.g., rsync, ssh, vercel CLI)"
+      # Build the project
+      - name: Build project
+        run: npm run build
+
+      # Deploy to github pages
+      - name: Deploy to github pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
