@@ -741,10 +741,12 @@
   dependencies:
     undici-types "~6.19.2"
 
-"@types/node@^16.7.13":
-  version "16.18.114"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.114.tgz#794d93059fd94a85503484e111aa820b3ebb4d4b"
-  integrity sha512-7oAtnxrgkMNzyzT443UDWwzkmYew81F1ZSPm3/lsITJfW/WludaSOpegTvUG+UdapcbrtWOtY/E4LyTkhPGJ5Q==
+"@types/node@^20":
+  version "20.17.32"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.32.tgz#cb9703514cd8e172c11beff582c66006644c2d88"
+  integrity sha512-zeMXFn8zQ+UkjK4ws0RiOC9EWByyW1CcVmLe+2rQocXRsGEDxUCwPEIVgpsGcLHS/P8JkT0oa3839BRABS0oPw==
+  dependencies:
+    undici-types "~6.19.2"
 
 "@types/prop-types@*":
   version "15.7.13"
