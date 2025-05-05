@@ -1,5 +1,14 @@
-import React, { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import "./NavBar.scss";
+
+const navItems = [
+  { id: "home", label: "Home" },
+  { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
+  { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
+  { id: "contact", label: "Contact" },
+];
 
 interface NavbarProps {
   scrollToSection: (section: string) => void;
@@ -7,6 +16,18 @@ interface NavbarProps {
 
 const Navbar: FC<NavbarProps> = ({ scrollToSection }) => {
   const [showMenu, setShowMenu] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("home");
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -14,16 +35,19 @@ const Navbar: FC<NavbarProps> = ({ scrollToSection }) => {
 
   const handleClick = (navMenu: string) => {
     scrollToSection(navMenu);
+    setActiveSection(navMenu);
     if (window.innerWidth <= 992) {
       setShowMenu(false);
     }
   };
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <nav className="nav container">
-        <h1 className="nav__logo">
-          Sivakumar
-          <span> Jenushanth</span>
+        <h1 className="logo">
+          <p>
+            Sivakumar
+            <span> Jenushanth</span>
+          </p>
         </h1>
 
         <div
@@ -31,60 +55,19 @@ const Navbar: FC<NavbarProps> = ({ scrollToSection }) => {
           id="nav-menu"
         >
           <ul className="nav__list">
-            <li className="nav__item">
-              <a
-                href="#home"
-                onClick={() => handleClick("home")}
-                className="nav__link"
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#experience"
-                onClick={() => handleClick("experience")}
-                className="nav__link"
-              >
-                Experience
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#education"
-                onClick={() => handleClick("education")}
-                className="nav__link"
-              >
-                Education
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#projects"
-                onClick={() => handleClick("projects")}
-                className="nav__link"
-              >
-                Projects
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#skills"
-                onClick={() => handleClick("skills")}
-                className="nav__link"
-              >
-                Skills
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#contact"
-                onClick={() => handleClick("contact")}
-                className="nav__link"
-              >
-                Contact
-              </a>
-            </li>
+            {navItems.map((item) => (
+              <li className="nav__item" key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  onClick={() => handleClick(item.id)}
+                  className={`nav__link ${
+                    activeSection === item.id ? "active" : ""
+                  }`}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
           <div className="nav__close" id="nav-close" onClick={toggleMenu}>
             {/* <IoClose /> */}

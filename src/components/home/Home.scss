@@ -1,4 +1,4 @@
-@import "../../styles/globalColor.scss";
+@use "../../styles/globalColor.scss" as *;
 
 .greet-main {
   width: 85%;
@@ -13,7 +13,6 @@
 
 .subTitle {
   color: $subTitle !important;
-  background-color: $lightBackground2;
   padding: 1rem;
 }
 
@@ -40,19 +39,22 @@
 }
 
 .greeting-text {
-  font-size: 50px;
+  font-size: 3rem;
   line-height: 1.1;
   color: $textColor !important;
+  span {
+    color: $stackoverflow !important;
+  }
 }
 
 .greeting-text-p {
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 30px;
 }
 
 .greeting-image-div > img {
-  max-width: 90%;
-  height: 75%;
+  max-width: 80%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,14 +72,15 @@
   width: 100%;
   display: flex;
   button {
-    background-color: $darkScreen; /* Green */
-    border: none;
+    background-color: black; /* Green */
+    border-radius: 0.5rem;
     color: $stackoverflow;
-    padding: 16px 32px;
+    padding: 13px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: 600;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;

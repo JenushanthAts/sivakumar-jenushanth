@@ -1,4 +1,4 @@
-@import "../../styles/globalColor.scss";
+@use "../../styles/globalColor.scss" as *;
 
 .header {
   position: sticky;
@@ -8,6 +8,12 @@
   left: 0;
   background-color: $darkScreen;
   z-index: 99;
+  // Start without shadow
+  box-shadow: none;
+
+  &.scrolled {
+    box-shadow: 0 2px 4px $shadow;
+  }
 }
 
 .nav {
@@ -18,13 +24,13 @@
   margin: 0 auto;
 }
 
-.nav__logo {
-  color: $lightBackground1;
+.logo {
   transition: color 0.4s;
   font-size: 1.5rem;
   font-weight: 500;
+  color: black !important;
   span {
-    color: $stackoverflow;
+    color: $stackoverflow !important;
   }
 }
 
@@ -36,7 +42,7 @@
 }
 
 .container {
-  color: hsl(0, 0%, 6%);
+  color: #fffffff2;
   border: none;
   transition: background-color 0.3s ease;
 }
@@ -91,6 +97,10 @@
   transition: color 0.4s;
   text-decoration: none;
   font-size: 1rem;
+  &.active {
+    color: salmon; // or any highlight color
+    font-weight: bold;
+  }
 }
 
 .nav__link:hover {

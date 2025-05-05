@@ -1,5 +1,4 @@
-import React from "react";
-import jenushanth from "../../assets/jenushanth.png";
+import jenushanth from "../../../public/Profile.jpg";
 
 import "./Home.scss";
 
@@ -16,8 +15,10 @@ const Home = () => {
       <div className="greeting-main">
         <div className="greeting-text-div">
           <div>
-            <h1 className={"greeting-text"}>I'm Jenushanth</h1>
-            <p className={"dark-mode greeting-text-p"}>
+            <h1 className="greeting-text">
+              I'm <span>Jenushanth</span>
+            </h1>
+            <p className="dark-mode greeting-text-p">
               🌟 Passionate Full Stack Developer | 3+ years Experience
             </p>
             <p className="text-justify greeting-text-p subTitle">
@@ -33,7 +34,7 @@ const Home = () => {
           </div>
         </div>
         <div className="greeting-image-div">
-          <img alt="man sitting on table" src={jenushanth}></img>
+          <img alt="Mr.S.Jenushanth" src={jenushanth}></img>
         </div>
       </div>
     </div>
