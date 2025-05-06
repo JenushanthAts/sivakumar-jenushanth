@@ -1,5 +1,5 @@
-import jenushanth from "../../../public/Profile.jpg";
-
+import DownloadIcon from "../../../public/icons/download.icon";
+import Button from "../button/Button";
 import "./Home.scss";
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
               I'm <span>Jenushanth</span>
             </h1>
             <p className="dark-mode greeting-text-p">
-              🌟 Passionate Full Stack Developer | 3+ years Experience
+              🚀 Passionate Full Stack Developer | 3+ years Experience
             </p>
             <p className="text-justify greeting-text-p subTitle">
               With a strong foundation in TypeScript, JavaScript, React.js, and
@@ -29,12 +29,17 @@ const Home = () => {
               visually compelling experiences.
             </p>
             <div className="portfolio-repo-btn-div">
-              <button onClick={downLoadCv}>Download Cv</button>
+              <Button
+                onClick={downLoadCv}
+                icon={<DownloadIcon size={20} />}
+                label="Download CV"
+                variant="primary"
+              />
             </div>
           </div>
         </div>
         <div className="greeting-image-div">
-          <img alt="Mr.S.Jenushanth" src={jenushanth}></img>
+          <img alt="Mr.S.Jenushanth" src="/Profile.jpg"></img>
         </div>
       </div>
     </div>

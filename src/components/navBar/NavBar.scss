@@ -8,7 +8,6 @@
   left: 0;
   background-color: $darkScreen;
   z-index: 99;
-  // Start without shadow
   box-shadow: none;
 
   &.scrolled {
@@ -93,13 +92,12 @@
 
 .nav__link {
   color: $subTitle;
-  // font-weight: 00;
   transition: color 0.4s;
   text-decoration: none;
   font-size: 1rem;
   &.active {
     color: salmon; // or any highlight color
-    font-weight: bold;
+    font-weight: 600;
   }
 }
 

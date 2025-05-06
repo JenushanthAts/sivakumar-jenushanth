@@ -1,4 +1,4 @@
-@import "../../styles/globalColor.scss";
+@use "../../styles/globalColor.scss" as *;
 
 .card-list {
   background-color: $timeLineContentBgColor;
