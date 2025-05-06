@@ -1,4 +1,5 @@
 import DownloadIcon from "../../../public/icons/download.icon";
+import profileImg from "../../../src/assets/Profile.webp";
 import Button from "../button/Button";
 import "./Home.scss";
 
@@ -39,7 +40,7 @@ const Home = () => {
           </div>
         </div>
         <div className="greeting-image-div">
-          <img alt="Mr.S.Jenushanth" src="/Profile.jpg"></img>
+          <img alt="Mr.S.Jenushanth" src={profileImg}></img>
         </div>
       </div>
     </div>
