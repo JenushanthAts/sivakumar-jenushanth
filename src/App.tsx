@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
-import Navbar from "./components/navBar/NavBar";
-import Home from "./components/home/Home";
-import Skills from "./components/skills/Skills";
-import Education from "./components/education/Education";
+import { useRef } from "react";
 import Contact from "./components/contact/Contact";
+import Education from "./components/education/Education";
 import Experience from "./components/experience/Experience";
+import Home from "./components/home/Home";
+import Navbar from "./components/navBar/NavBar";
 import Projects from "./components/projects/Projects";
+import Skills from "./components/skills/Skills";
 
 const App = () => {
   const homeRef = useRef<HTMLDivElement | null>(null);
@@ -43,16 +43,13 @@ const App = () => {
       <div ref={experienceRef}>
         <Experience />
       </div>
-      <div className="grid-container">
-        <div className="grid-row">
-          <div className="col-xs-12 col-md-6 col-lg-6" ref={educationRef}>
-            <Education />
-          </div>
-          <div className="col-sm-12 col-md-6 col-lg-6" ref={projectsRef}>
-            <Projects />
-          </div>
-        </div>
+      <div ref={educationRef}>
+        <Education />
       </div>
+      <div ref={projectsRef}>
+        <Projects />
+      </div>
+
       <div ref={skillsRef}>
         <Skills />
       </div>
