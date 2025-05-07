@@ -13,7 +13,7 @@ type CardProps = {
 const Card: FC<CardProps> = ({ title, skills }) => {
   return (
     <div className="p-4">
-      <h3 className="text-center skill-name">{title}</h3>
+      <h2 className="text-center skill-name">{title}</h2>
       <ul className="grid grid-cols-3 md:grid-cols-4 gap-6 mt-3">
         {skills.map((ele, index) => (
           <li key={index}>
