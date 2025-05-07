@@ -1,17 +1,35 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import "./Card.scss";
+
+type SkillProps = {
+  title: string;
+  src: string;
+};
 type CardProps = {
   title: string;
-  data: string[];
+  skills: SkillProps[];
 };
 
-const Card: FC<CardProps> = ({ title, data }) => {
+const Card: FC<CardProps> = ({ title, skills }) => {
   return (
-    <div className="card-list">
-      <h3 className="text-center">{title}</h3>
-      <ul className="card-items">
-        {data.map((ele, index) => (
-          <li key={index}>{ele}</li>
+    <div className="p-4">
+      <h3 className="text-center skill-name">{title}</h3>
+      <ul className="grid grid-cols-3 md:grid-cols-4 gap-6 mt-3">
+        {skills.map((ele, index) => (
+          <li key={index}>
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 flex items-center justify-center">
+                <img
+                  src={ele.src}
+                  alt={ele.title}
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+              <span className="text-base text-center skill-title">
+                {ele.title}
+              </span>
+            </div>
+          </li>
         ))}
       </ul>
     </div>

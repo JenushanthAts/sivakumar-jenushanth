@@ -1,4 +1,5 @@
-// Variables for breakpoints
+@use "sass:map";
+
 $breakpoints: (
   xs: 0,
   sm: 576px,
@@ -12,8 +13,8 @@ $columns: 12; // Number of columns in the grid
 $gutter-width: 1rem; // Space between columns
 
 @mixin respond-to($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media (min-width: map.get($breakpoints, $breakpoint)) {
       @content;
     }
   }
@@ -23,52 +24,114 @@ $gutter-width: 1rem; // Space between columns
 .grid-container {
   width: 85%;
   margin: 0 auto;
-  padding-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
 
-// Row
-.grid-row {
+.mt-3 {
+  margin-top: 3rem;
+}
+
+$width: (
+  "8": 2rem,
+  "10": 2.5rem,
+  "12": 3rem,
+);
+
+// Loop through the map to create font-size classes
+@each $key, $value in $width {
+  .w-#{$key} {
+    width: $value;
+  }
+}
+
+$height: (
+  "8": 2rem,
+  "10": 2.5rem,
+  "12": 3rem,
+);
+
+// Loop through the map to create font-size classes
+@each $key, $value in $height {
+  .h-#{$key} {
+    height: $value;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -($gutter-width / 2);
-  margin-right: -($gutter-width / 2);
+}
 
-  > * {
-    padding-left: $gutter-width / 2;
-    padding-right: $gutter-width / 2;
-    box-sizing: border-box;
+.items-center {
+  align-items: center;
+}
+$flex-directions: (
+  "col": column,
+  "row": row,
+);
+
+// Loop through the map to create font-size classes
+@each $key, $value in $flex-directions {
+  .flex-#{$key} {
+    flex-direction: $value;
   }
 }
 
-// Columns
-@for $i from 1 through $columns {
-  .col-#{$i} {
-    flex: 0 0 #{100% / $columns * $i};
-    max-width: #{100% / $columns * $i};
+$gaps: (
+  "6": 1.5rem,
+  "8": 2rem,
+  "10": 2.5rem,
+  "12": 3rem,
+);
+
+// Loop through the map to create font-size classes
+@each $key, $value in $gaps {
+  .gap-#{$key} {
+    gap: $value;
   }
 }
 
-// Responsive Columns
-@each $breakpoint, $value in $breakpoints {
-  @for $i from 1 through $columns {
-    .col-#{$breakpoint}-#{$i} {
-      @include respond-to($breakpoint) {
-        flex: 0 0 #{100% / $columns * $i};
-        max-width: #{100% / $columns * $i};
+$grid-cols: (
+  1: repeat(1, minmax(0, 1fr)),
+  2: repeat(2, minmax(0, 1fr)),
+  3: repeat(3, minmax(0, 1fr)),
+  4: repeat(4, minmax(0, 1fr)),
+  5: repeat(5, minmax(0, 1fr)),
+);
+
+@each $key, $value in $grid-cols {
+  .grid-cols-#{$key} {
+    grid-template-columns: $value;
+  }
+}
+
+// Generate grid column classes
+@each $breakpoint, $size in $breakpoints {
+  @include respond-to($breakpoint) {
+    @for $i from 1 through $columns {
+      .#{$breakpoint}\:grid-cols-#{$i} {
+        grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
       }
     }
   }
 }
 
-// Full-width column
-.col {
-  flex: 1 1 0;
-  max-width: 100%;
-}
+$paddings: (
+  "4": 1rem,
+  "6": 1.5rem,
+  "8": 2rem,
+  "10": 2.5rem,
+  "12": 3rem,
+);
 
-.mt-3 {
-  margin-top: 3rem;
+// Loop through the map to create font-size classes
+@each $key, $value in $paddings {
+  .p-#{$key} {
+    padding: $value;
+  }
 }

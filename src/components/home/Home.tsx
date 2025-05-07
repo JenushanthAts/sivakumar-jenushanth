@@ -20,7 +20,7 @@ const Home = () => {
               I'm <span>Jenushanth</span>
             </h1>
             <p className="dark-mode greeting-text-p">
-              🚀 Passionate Full Stack Developer | 3+ years Experience
+              🚀 Passionate Full Stack Engineer | 3+ years Experience
             </p>
             <p className="text-justify greeting-text-p subTitle">
               With a strong foundation in TypeScript, JavaScript, React.js, and
