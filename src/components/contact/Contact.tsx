@@ -1,4 +1,3 @@
-import React from "react";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -17,7 +16,7 @@ const Contact = () => {
           <i className="fas fa-location fa-2x"></i>
           Remote / Hybrid
         </p>
-        <div className="social-medias">
+        <div>
           <a
             href="mailto:sivakumarjenushanth@gmail.com"
             className="icon-btn gmail"
@@ -53,6 +52,7 @@ const Contact = () => {
             <i className="fas fa-code fa-2x"></i>
           </a>
         </div>
+        <hr className="mt-3"></hr>
         <p className="text-center">
           Copyright &copy;{new Date().getFullYear()} {""}
           <span>Sivakumar Jenushanth</span>, All Rights Reserved
