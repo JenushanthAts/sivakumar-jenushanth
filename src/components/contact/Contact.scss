@@ -1,10 +1,10 @@
-@import "../../styles/globalColor.scss";
+@use "../../styles/globalColor.scss" as *;
 
 .contact-section {
   display: flex;
   flex-direction: column;
   background: $darkScreen;
-  margin-top: 6rem;
+  // margin-top: 6rem;
   h1 {
     color: $lightBackground1 !important;
     font-weight: bold !important;
