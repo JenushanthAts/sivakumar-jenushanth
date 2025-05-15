@@ -29,31 +29,24 @@ $gutter-width: 1rem; // Space between columns
   box-sizing: border-box;
 }
 
-.mt-3 {
-  margin-top: 3rem;
-}
-
-$width: (
+$keyValues: (
+  "2": 0.5rem,
+  "4": 1rem,
+  "6": 1.5rem,
   "8": 2rem,
   "10": 2.5rem,
   "12": 3rem,
 );
 
 // Loop through the map to create font-size classes
-@each $key, $value in $width {
+@each $key, $value in $keyValues {
   .w-#{$key} {
     width: $value;
   }
 }
 
-$height: (
-  "8": 2rem,
-  "10": 2.5rem,
-  "12": 3rem,
-);
-
 // Loop through the map to create font-size classes
-@each $key, $value in $height {
+@each $key, $value in $keyValues {
   .h-#{$key} {
     height: $value;
   }
@@ -82,15 +75,8 @@ $flex-directions: (
   }
 }
 
-$gaps: (
-  "6": 1.5rem,
-  "8": 2rem,
-  "10": 2.5rem,
-  "12": 3rem,
-);
-
 // Loop through the map to create font-size classes
-@each $key, $value in $gaps {
+@each $key, $value in $keyValues {
   .gap-#{$key} {
     gap: $value;
   }
@@ -121,17 +107,91 @@ $grid-cols: (
   }
 }
 
-$paddings: (
-  "4": 1rem,
-  "6": 1.5rem,
-  "8": 2rem,
-  "10": 2.5rem,
-  "12": 3rem,
-);
+@each $key, $value in $keyValues {
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+}
 
-// Loop through the map to create font-size classes
-@each $key, $value in $paddings {
+// Loop through the map to create padding classes
+@each $key, $value in $keyValues {
   .p-#{$key} {
     padding: $value;
+  }
+
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+$radius: (
+  "sm": 0.125rem,
+  "md": 0.375rem,
+  "lg": 0.5rem,
+  "full": 9999px,
+);
+
+border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+$colors: (
+  "gray-300": #d1d5db,
+  "primary": #6366f1,
+);
+
+@each $name, $color in $colors {
+  .border-#{$name} {
+    border-color: $color;
+  }
+
+  .ring-#{$name} {
+    box-shadow: 0 0 0 2px $color;
+  }
+}
+
+@each $key, $value in $radius {
+  .rounded-#{$key} {
+    border-radius: $value;
+  }
+}
+
+$shadows: (
+  "sm": 0 1px 2px 0 rgba(0, 0, 0, 0.05),
+  "md": 0 4px 6px rgba(0, 0, 0, 0.1),
+);
+
+@each $key, $shadow in $shadows {
+  .shadow-#{$key} {
+    box-shadow: $shadow;
+  }
+}
+
+.transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.focus\:outline-none {
+  &:focus {
+    outline: none;
+  }
+}
+
+.focus\:border-transparent {
+  &:focus {
+    border-color: transparent;
+  }
+}
+
+.focus\:ring-2 {
+  &:focus {
+    box-shadow: 0 0 0 2px currentColor; // Will use the current text color unless overridden
   }
 }

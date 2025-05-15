@@ -10,7 +10,7 @@ import Card from "../card/Card";
 const Skills = () => {
   return (
     <div>
-      <h1 className="text-center text-4xl mt-3">
+      <h1 className="text-center text-4xl mt-6">
         Professional Skills & Expertise
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

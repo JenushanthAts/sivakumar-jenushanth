@@ -14,12 +14,12 @@
     box-shadow 0.3s ease-in-out;
 
   &.btn--primary {
-    background-color: $stackoverflow;
+    background-color: $primary;
     color: white;
     border: none;
 
     &:hover {
-      background-color: $stackoverflow;
+      background-color: $primary;
       transform: scale(1.05);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
@@ -44,19 +44,6 @@
 
     &:hover {
       background-color: darkred;
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-  }
-
-  &.btn--outline {
-    background-color: transparent;
-    color: blue;
-    border: 2px solid blue;
-
-    &:hover {
-      background-color: blue;
-      color: white;
       transform: scale(1.05);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }

@@ -116,6 +116,14 @@ export const DevelopmentTools = [
     src: "https://icon.icepanel.io/Technology/png-shadow-512/Socket.io.png",
   },
   {
+    title: "Npm",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+  },
+  {
+    title: "Yarn",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg",
+  },
+  {
     title: "Linux",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
   },
@@ -138,5 +146,9 @@ export const DevelopmentTools = [
   {
     title: "Azure",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+  },
+  {
+    title: "Swagger",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg",
   },
 ];

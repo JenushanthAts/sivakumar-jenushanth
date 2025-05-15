@@ -2,7 +2,6 @@
 
 .header {
   position: sticky;
-  height: 5rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -26,17 +25,17 @@
 .logo {
   transition: color 0.4s;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   color: black !important;
   span {
-    color: $stackoverflow !important;
+    color: $primary !important;
   }
 }
 
 .nav__toggle,
 .nav__close {
   font-size: 1.5rem;
-  color: $stackoverflow;
+  color: $primary;
   cursor: pointer;
 }
 
@@ -94,15 +93,15 @@
   color: $subTitle;
   transition: color 0.4s;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   &.active {
-    color: salmon; // or any highlight color
-    font-weight: 600;
+    color: $primary; // or any highlight color
+    font-weight: 800;
   }
 }
 
 .nav__link:hover {
-  color: $gitlab;
+  color: $primary;
 }
 
 .nav__close {
