@@ -1,62 +1,86 @@
 @use "../../styles/globalColor.scss" as *;
 
-.contact-section {
+.description {
+  color: $subTitle;
+}
+
+.social-icons {
   display: flex;
-  flex-direction: column;
-  background: $darkScreen;
-  // margin-top: 6rem;
-  h1 {
-    color: $lightBackground1 !important;
-    font-weight: bold !important;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    background: #e6e6e6cf;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      color: $primary;
+    }
   }
-  .contact-body {
-    width: 85%;
-    margin: 0 auto;
-    p {
-      font-size: 1rem !important;
-      line-height: 1.4rem;
-      font-weight: 400 !important;
-      color: $subTitle !important;
+}
+
+.info-block {
+  margin-top: 1.5rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+
+    .icon-circle {
+      background: #e6e6e6cf;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.75rem;
+    }
+
+    a {
+      text-decoration: none;
+
+      small {
+        color: #333;
+      }
 
       span {
-        color: $stackoverflow;
-        font-weight: 600 !important;
+        color: $primary;
+        font-weight: 600;
       }
     }
+  }
+}
 
-    .icon-btn i {
-      border-radius: 2.6rem;
-      color: $darkBoxShadow2;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 1.3rem;
-      height: 2.6rem;
-      line-height: 2.6rem;
-      margin: 0 5px 10px;
-      position: relative;
-      text-align: center;
-      transition: 0.2s ease-in;
-      -webkit-user-select: none;
-      user-select: none;
-      width: 2.6rem;
-    }
-    .mobile i {
-      background-color: $google;
-    }
-    .gmail i {
-      background-color: $darkGreen;
-    }
-    .github i {
-      background-color: $github;
-    }
-    .linkedin i {
-      background-color: $twitter;
-    }
-    .coding i {
-      background-color: $instagram;
-    }
-    .location i {
-      background-color: $darkBoxShadow;
-    }
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  margin: 3rem 0 1rem 0;
+  border: none;
+}
+
+.copyright {
+  font-size: 1rem;
+  color: $subTitle;
+  span {
+    color: $primary;
+    font-weight: 700;
+  }
+}
+
+.email {
+  text-decoration: none;
+  span {
+    color: $primary;
+    font-weight: 500;
   }
 }

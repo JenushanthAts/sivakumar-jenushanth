@@ -39,10 +39,9 @@
 
 .greeting-text {
   font-size: 3rem;
-  line-height: 1.1;
   color: $textColor !important;
   span {
-    color: $stackoverflow !important;
+    color: $primary !important;
   }
 }
 
@@ -69,6 +68,12 @@
 
 .portfolio-repo-btn-div {
   display: flex;
+}
+
+.strengths {
+  line-height: 2rem !important;
+  color: $primary;
+  font-weight: 400;
 }
 @keyframes wave {
   0% {
