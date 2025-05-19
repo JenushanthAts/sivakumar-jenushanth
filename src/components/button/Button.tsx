@@ -9,6 +9,7 @@ interface ButtonProps {
   icon?: React.ReactNode;
   type?: ButtonType;
   variant?: ButtonVariant; // Optional variant pro
+  active?: boolean;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -17,9 +18,14 @@ const Button: FC<ButtonProps> = ({
   label,
   variant = "primary",
   type = "button",
+  active = false,
 }) => {
   return (
-    <button onClick={onClick} className={`btn btn--${variant}`} type={type}>
+    <button
+      onClick={onClick}
+      className={`btn btn--${variant} ${active ? "active" : ""}`}
+      type={type}
+    >
       {icon && <span className="icon-wrapper">{icon}</span>}
       {label}
     </button>

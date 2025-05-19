@@ -6,13 +6,14 @@ const Contact = () => {
   const { formData, handleChange, handleSubmit } = useContactForm();
   return (
     <div>
-      <div className="grid-container">
+      <div className="grid-container mt-12">
         <div className="grid md:grid-cols-2 gap-10 mt-12">
           <div className="contact-info">
-            <h1 className="text-4xl ">Reach out to me</h1>
-            <p className="description">
-              I’m available on almost every social media platform! Feel free to
-              reach out to me, and I’ll respond within 24 hours.
+            <h1 className="text-4xl ">
+              Reach out to <span>me</span>
+            </h1>
+            <p className="text-justify greeting-text-p subTitle">
+              Let’s turn your next big idea into a powerful digital product.
             </p>
 
             <div>

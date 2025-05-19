@@ -26,24 +26,7 @@ const Home = () => {
               seamless UX, I turn complex ideas into interactive,
               high-performance digital experiences.
             </p>
-            <p className="text-justify greeting-text-p subTitle">
-              💡 My strengths include:
-            </p>
-            <ul className="strengths">
-              <li>
-                🔧 Building reusable, scalable components and RESTful APIs
-              </li>
-              <li>🎯 Writing clean, efficient, and testable code</li>
-              <li>
-                ⚙️ Integrating third-party services and tools with precision
-              </li>
-              <li>
-                💻 Optimizing performance for smooth, responsive interfaces
-              </li>
-            </ul>
-            <p className="text-justify greeting-text-p subTitle">
-              Let’s turn your next big idea into a powerful digital product.
-            </p>
+
             <div className="portfolio-repo-btn-div">
               <Button
                 onClick={downLoadCv}

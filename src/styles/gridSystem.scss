@@ -38,6 +38,15 @@ $keyValues: (
   "12": 3rem,
 );
 
+$justifyValues: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+  "12": 3rem,
+);
+
 // Loop through the map to create font-size classes
 @each $key, $value in $keyValues {
   .w-#{$key} {
@@ -60,9 +69,19 @@ $keyValues: (
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .items-center {
   align-items: center;
 }
+
+@each $key, $value in $justifyValues {
+  .justify-#{$key} {
+    justify-content: $value;
+  }
+}
+
 $flex-directions: (
   "col": column,
   "row": row,
@@ -88,6 +107,9 @@ $grid-cols: (
   3: repeat(3, minmax(0, 1fr)),
   4: repeat(4, minmax(0, 1fr)),
   5: repeat(5, minmax(0, 1fr)),
+  6: repeat(6, minmax(0, 1fr)),
+  7: repeat(7, minmax(0, 1fr)),
+  8: repeat(8, minmax(0, 1fr)),
 );
 
 @each $key, $value in $grid-cols {
