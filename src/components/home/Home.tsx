@@ -14,9 +14,9 @@ const Home = () => {
       <div className="greeting-main">
         <div className="greeting-text-div">
           <div>
-            <h1 className="greeting-text">
+            <p className="text-4xl md:text-base text-sm md:text-base">
               I'm <span>Jenushanth</span>
-            </h1>
+            </p>
             <p className="dark-mode greeting-text-p">
               🚀 Full Stack Engineer | 3+ years Experience
             </p>

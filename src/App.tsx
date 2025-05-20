@@ -35,26 +35,28 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="min-h-screen">
       <Navbar scrollToSection={scrollToSection} />
-      <div ref={homeRef}>
-        <Home />
-      </div>
-      <div ref={experienceRef}>
-        <Experience />
-      </div>
-      <div ref={educationRef}>
-        <Education />
-      </div>
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
+      <div className="max-w-5xl mx-auto px-8 lg:px-3 py-8">
+        <div ref={homeRef}>
+          <Home />
+        </div>
+        <div ref={experienceRef}>
+          <Experience />
+        </div>
+        <div ref={educationRef}>
+          <Education />
+        </div>
+        <div ref={projectsRef}>
+          <Projects />
+        </div>
 
-      <div ref={skillsRef}>
-        <Skills />
-      </div>
-      <div ref={contactRef}>
-        <Contact />
+        <div ref={skillsRef}>
+          <Skills />
+        </div>
+        <div ref={contactRef}>
+          <Contact />
+        </div>
       </div>
     </div>
   );

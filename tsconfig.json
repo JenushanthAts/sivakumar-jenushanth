@@ -17,5 +17,5 @@
     "jsx": "react-jsx",
     "types": ["vite/client"]
   },
-  "include": ["src", "public/icons"]
+  "include": ["src", "public/icons", "postcss.config.js"]
 }

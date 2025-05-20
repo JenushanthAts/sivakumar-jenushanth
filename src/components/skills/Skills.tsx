@@ -31,11 +31,11 @@ const Skills = () => {
   };
 
   return (
-    <div>
-      <h1 className="text-center text-4xl mt-6">
+    <div className="mt-12 pt-4">
+      <h1 className="text-slate-800 text-4xl font-semibold">
         Professional Skills & Expertise
       </h1>
-      <div className="grid-container">
+      <div className="grid-container mt-6">
         <div className="flex justify-center items-center flex-wrap gap-10 mt-10">
           <Button
             label="Front End"
