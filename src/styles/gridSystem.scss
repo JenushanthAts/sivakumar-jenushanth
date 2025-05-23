@@ -129,12 +129,6 @@ $grid-cols: (
   }
 }
 
-@each $key, $value in $keyValues {
-  .mt-#{$key} {
-    margin-top: $value;
-  }
-}
-
 // Loop through the map to create padding classes
 @each $key, $value in $keyValues {
   .p-#{$key} {

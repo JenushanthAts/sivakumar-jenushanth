@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #019875;
+  --color-gray: #00b60d1a;
+  --font-arial: Outfit, "Arial", "sans-serif";
+}

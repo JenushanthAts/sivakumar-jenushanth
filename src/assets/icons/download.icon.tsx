@@ -5,12 +5,12 @@ interface Props {
   color?: string;
 }
 
-const DownloadIcon: FC<Props> = ({ size, color }) => {
+const DownloadIcon: FC<Props> = ({ size = 24, color }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size ?? 12}
-      height={size ?? 12}
+      width={size}
+      height={size}
       fill="none"
     >
       <path

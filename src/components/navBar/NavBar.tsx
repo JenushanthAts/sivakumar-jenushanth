@@ -1,5 +1,4 @@
 import { FC, useEffect, useState } from "react";
-import "./NavBar.scss";
 
 const navItems = [
   { id: "home", label: "Home" },
@@ -41,42 +40,56 @@ const Navbar: FC<NavbarProps> = ({ scrollToSection }) => {
     }
   };
   return (
-    <header className={`header ${scrolled ? "scrolled" : ""}`}>
-      <nav className="nav container">
-        <h1 className="logo">
-          <p>
-            Sivakumar
-            <span> Jenushanth</span>
+    <header
+      className={`sticky top-0 z-50 py-6 transition-all bg-white  ${
+        scrolled ? "shadow-md" : ""
+      }`}
+    >
+      <nav className="flex items-center justify-between w-[90%] mx-auto">
+        <h1 className="text-xl font-bold text-black  duration-400">
+          <p className="text-3xl">
+            Sivakumar <span className=" text-primary">Jenushanth</span>
           </p>
         </h1>
 
+        {/* Menu (Mobile and Desktop) */}
         <div
-          className={`nav__menu ${showMenu ? "show-menu" : ""}`}
-          id="nav-menu"
+          className={`fixed top-0 transition-all duration-400 z-50 h-full w-1/2 md:w-auto md:static md:h-auto md:bg-transparent bg-darkScreen backdrop-blur-md p-6 md:p-0 ${
+            showMenu ? "right-0" : "right-[-100%] md:right-0"
+          }`}
         >
-          <ul className="nav__list">
+          <ul className="flex flex-col md:flex-row gap-10 md:gap-10 list-none">
             {navItems.map((item) => (
-              <li className="nav__item" key={item.id}>
+              <li key={item.id}>
                 <a
                   href={`#${item.id}`}
                   onClick={() => handleClick(item.id)}
-                  className={`nav__link ${
-                    activeSection === item.id ? "active" : ""
-                  }`}
+                  className={`text-[1.2rem] transition-colors duration-400 ${
+                    activeSection === item.id
+                      ? "text-primary font-bold"
+                      : "text-slate-600"
+                  } hover:text-primary`}
                 >
                   {item.label}
                 </a>
               </li>
             ))}
           </ul>
-          <div className="nav__close" id="nav-close" onClick={toggleMenu}>
-            {/* <IoClose /> */}
+
+          {/* Close Icon (Mobile Only) */}
+          <div
+            className="absolute top-4 right-6 text-primary text-xl cursor-pointer md:hidden"
+            onClick={toggleMenu}
+          >
             <i className="fa fa-close"></i>
           </div>
         </div>
 
-        <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-          {/* <IoMenu /> */}
+        {/* Toggle Icon (Mobile Only) */}
+        <div
+          className="text-primary text-xl cursor-pointer md:hidden"
+          onClick={toggleMenu}
+        >
           <i className="fa fa-bars"></i>
         </div>
       </nav>

@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Contact from "./components/contact/Contact";
+import Divider from "./components/divider/Divider";
 import Education from "./components/education/Education";
 import Experience from "./components/experience/Experience";
 import Home from "./components/home/Home";
@@ -35,26 +36,36 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="min-h-screen">
       <Navbar scrollToSection={scrollToSection} />
-      <div ref={homeRef}>
-        <Home />
-      </div>
-      <div ref={experienceRef}>
-        <Experience />
-      </div>
-      <div ref={educationRef}>
-        <Education />
-      </div>
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
+      <div className="max-w-5xl mx-auto px-8 lg:px-3 py-8">
+        <div ref={homeRef}>
+          <Home />
+        </div>
+        <Divider />
 
-      <div ref={skillsRef}>
-        <Skills />
-      </div>
-      <div ref={contactRef}>
-        <Contact />
+        <div ref={experienceRef}>
+          <Experience />
+        </div>
+        <Divider />
+
+        <div ref={educationRef}>
+          <Education />
+        </div>
+        <Divider />
+
+        <div ref={projectsRef}>
+          <Projects />
+        </div>
+        <Divider />
+        <div ref={skillsRef}>
+          <Skills />
+        </div>
+        <Divider />
+
+        <div ref={contactRef}>
+          <Contact />
+        </div>
       </div>
     </div>
   );

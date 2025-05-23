@@ -18,7 +18,7 @@ export const EducationData = [
     title: "GCE (Advanced & Ordinary Level)",
     logo: koddaikallarLogo,
     duration: "Jan 2010 - Aug 2014",
-    subHeading: "BT/PD/Koddaikallar Maha Vidyalaya",
+    subHeading: "Batticaloa/Paddiruppu/Koddaikallar Maha Vidyalaya",
     location: "Koddaikallar, Batticaloa, Srilanka",
     summary: [
       "Completed under the General Certificate of Education (G.C.E.) syllabus administered by the Department of Examinations, Sri Lanka.",
