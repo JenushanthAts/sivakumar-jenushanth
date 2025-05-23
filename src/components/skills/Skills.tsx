@@ -31,7 +31,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="mt-12 pt-4">
+    <div>
       <h1 className="text-slate-800 text-4xl font-semibold">
         Professional Skills & Expertise
       </h1>

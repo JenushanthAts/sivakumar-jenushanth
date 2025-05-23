@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Contact from "./components/contact/Contact";
+import Divider from "./components/divider/Divider";
 import Education from "./components/education/Education";
 import Experience from "./components/experience/Experience";
 import Home from "./components/home/Home";
@@ -41,19 +42,27 @@ const App = () => {
         <div ref={homeRef}>
           <Home />
         </div>
+        <Divider />
+
         <div ref={experienceRef}>
           <Experience />
         </div>
+        <Divider />
+
         <div ref={educationRef}>
           <Education />
         </div>
+        <Divider />
+
         <div ref={projectsRef}>
           <Projects />
         </div>
-
+        <Divider />
         <div ref={skillsRef}>
           <Skills />
         </div>
+        <Divider />
+
         <div ref={contactRef}>
           <Contact />
         </div>

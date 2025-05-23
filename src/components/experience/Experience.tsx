@@ -3,9 +3,9 @@ import TimeLine from "../timeLine/TimeLine";
 
 const Experience = () => {
   return (
-    <div className="mt-12 pt-4">
+    <div>
       <h1 className="text-slate-800 text-4xl font-semibold">Experience</h1>
-      <div className=" grid-container mt-12">
+      <div className="pt-4 mt-12">
         <TimeLine data={ExperienceData} imgWidth={90} imgHeight={"auto"} />
       </div>
     </div>

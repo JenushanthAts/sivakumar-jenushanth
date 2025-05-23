@@ -1,5 +1,4 @@
 import { FC } from "react";
-import "./Button.scss";
 
 type ButtonVariant = "primary" | "secondary" | "danger" | "outline";
 type ButtonType = "button" | "submit" | "reset";
@@ -22,12 +21,12 @@ const Button: FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      onClick={onClick}
-      className={`btn btn--${variant} ${active ? "active" : ""}`}
       type={type}
+      onClick={onClick}
+      className="font-mono text-white bg-primary hover:bg-primary-600 rounded-md text-[15px] font-medium px-4 py-2 w-full cursor-pointer"
     >
-      {icon && <span className="icon-wrapper">{icon}</span>}
-      {label}
+      {/* {icon && <span className="flex items-center">{icon}</span>} */}
+      <span>{label}</span>
     </button>
   );
 };
