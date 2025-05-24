@@ -3,6 +3,7 @@ import Contact from "./components/contact/Contact";
 import Divider from "./components/divider/Divider";
 import Education from "./components/education/Education";
 import Experience from "./components/experience/Experience";
+import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Navbar from "./components/navBar/NavBar";
 import Projects from "./components/projects/Projects";
@@ -67,6 +68,7 @@ const App = () => {
           <Contact />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

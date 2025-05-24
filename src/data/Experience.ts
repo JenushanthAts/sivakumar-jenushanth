@@ -5,11 +5,11 @@ import kaayalTekLogo from "../assets/kaayalTekLogo.webp";
 
 export const ExperienceData = [
   {
-    title: "Avonet Technologies",
+    title: "Full Stack Engineer",
     logo: `${avonetLogo}`,
     duration: "June 2023 - Present",
     location: "Australia . Remote",
-    subHeading: "Full Stack Engineer",
+    subHeading: "Avonet Technologies",
     link: "https://avonet.com.au/",
     summary: [
       "Worked on the EuRail booking platform, an online system for booking rail travel across multiple routes and services to provide a comprehensive travel solution.",
@@ -35,10 +35,10 @@ export const ExperienceData = [
     ],
   },
   {
-    title: "AR Innovations Pty Ltd",
+    title: "Full Stack Engineer",
     logo: `${arLogo}`,
     duration: "Nov 2022 - May 2023",
-    subHeading: "Full Stack Engineer",
+    subHeading: "AR Innovations Pty Ltd",
     location: "Australia . Remote",
     link: "https://recroot.io/",
     summary: [
@@ -62,10 +62,10 @@ export const ExperienceData = [
     ],
   },
   {
-    title: "KaayalTek Systems (Pvt) Ltd",
+    title: "Associate Full Stack Engineer",
     logo: `${kaayalTekLogo}`,
     duration: "Oct 2021 - Oct 2022",
-    subHeading: "Associate Full Stack Engineer",
+    subHeading: "KaayalTek Systems (Pvt) Ltd",
     location: "Batticaloa, Srilanka . Onsite",
     link: "https://www.kaayaltek.com/",
     summary: [
@@ -89,10 +89,10 @@ export const ExperienceData = [
     ],
   },
   {
-    title: "ApptimusTech (PVT) Ltd",
+    title: "Intern Full Stack Engineer",
     logo: `${apptimusLogo}`,
     duration: "Jan 2020 - Jul 2020",
-    subHeading: "Intern Full Stack Engineer",
+    subHeading: "ApptimusTech (PVT) Ltd",
     location: "Jaffna, Srilanka . Onsite",
     link: "https://apptimustech.com/",
     summary: [

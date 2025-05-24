@@ -29,20 +29,35 @@ const TimeLine: FC<TimeLineProps> = ({
           <span className="absolute flex items-center justify-center w-6 h-6  rounded-full -start-3 ring-8 ring-white bg-green-600">
             <TimelineIcon size={10} />
           </span>
-          <h3 className="font-arial flex items-center mb-1 text-lg  text-gray-900">
+          <h3 className="font-arial text-lg mb-1 text-gray-900">
             {item.title}
-            <span className="text-primary dark:bg-[var(--color-gray)]  text-sm font-mono me-2 px-2.5 py-0.5 rounded-sm  ms-3">
-              {item.duration}
-            </span>
           </h3>
           {item.subHeading && (
-            <h4 className="font-arial text-sm text-gray-500 mt-2">
+            <a
+              className="text-primary cursor-pointer transition font-arial text-gray-500 mt-2"
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
+            >
               {item.subHeading}
-            </h4>
+            </a>
           )}
-          <time className="font-arial block mt-3 text-sm font-normal leading-none text-gray-400 ">
-            {item.location}
-          </time>
+
+          <div className="flex flex-col md:flex-row md:items-center md:space-x-4 mt-2">
+            {item.duration && (
+              <h4 className="font-arial text-sm text-gray-500 ">
+                <i className="far fa-calendar"></i>&nbsp;
+                {item.duration}
+              </h4>
+            )}
+
+            {item.location && (
+              <time className="font-arial text-sm font-normal leading-none text-gray-400 mt-3 md:mt-0">
+                <i className="fas fa-map-marker-alt"></i>&nbsp;{item.location}
+              </time>
+            )}
+          </div>
+
           {item.summary?.map((ele, index) => (
             <p className="font-arial mt-3 dark:text-gray-500" key={index}>
               {ele}
