@@ -8,6 +8,7 @@ export const PrjectsData = [
     logo: `${zoneCelon}`,
     duration: "Jan 2023 - Nov 2023",
     location: "Remote  .Srilanka",
+    subHeading: "Demo",
     summary: [
       "The objective is to unite individuals worldwide in support of building a healthier society in Sri Lanka.",
       "Improved page load time by 30% through optimization techniques such as lazy loading and image optimization.",
@@ -31,6 +32,7 @@ export const PrjectsData = [
     title: "IELTS Mastery",
     link: "https://remarkable-jelly-e8b040.netlify.app/",
     logo: `${ielts}`,
+    subHeading: "Demo",
     location: "Remote  .Srilanka",
     duration: "Apr 2022 - Oct 2022",
     summary: [

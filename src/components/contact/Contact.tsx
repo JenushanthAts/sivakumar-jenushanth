@@ -2,11 +2,26 @@ import EmailIcon from "../../assets/icons/email.icon";
 import { socialLinks } from "../../data/SocialLinks";
 import useContactForm from "../../hooks/useContactForm";
 import IconLinkList from "../iconLinkList/IconLinkList";
+import Toast from "../toast/Toast";
 
 const Contact = () => {
-  const { formData, handleChange, handleSubmit } = useContactForm();
+  const {
+    formData,
+    handleChange,
+    handleSubmit,
+    toastObj,
+    loading,
+    handleCloseToastMessage,
+  } = useContactForm();
   return (
     <div>
+      {toastObj && (
+        <Toast
+          type={toastObj.type}
+          message={toastObj.text}
+          onClose={handleCloseToastMessage}
+        />
+      )}
       <div className="grid sm:grid-cols-2 items-start gap-12  mx-auto  bg-white  rounded-md">
         <div>
           <h1 className="text-slate-900 text-4xl font-semibold">
@@ -88,8 +103,9 @@ const Contact = () => {
           <button
             type="submit"
             className="font-mono text-white bg-primary hover:bg-primary-600 rounded-md text-[15px] font-medium px-4 py-2 w-full cursor-pointer !mt-6"
+            disabled={loading}
           >
-            Send
+            {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </div>

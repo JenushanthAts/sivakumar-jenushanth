@@ -17,7 +17,7 @@ const Home = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-2">
             I'm <span className="text-primary">Jenushanth</span>
           </h1>
-          <h2 className="text-2xl font-mono text-muted-foreground mb-4 pt-3">
+          <h2 className="text-md md:text-2xl font-mono text-muted-foreground mb-4 pt-3">
             Full Stack Engineer | 3+ Years Experience
           </h2>
           <p className="font-arial text-justify dark:text-gray-500 mb-6 max-w-md">
@@ -33,7 +33,7 @@ const Home = () => {
               label="Download CV"
               variant="primary"
             />
-            <ul className="flex  flex-wrap space-x-4 justify-center ">
+            <ul className="flex flex-wrap space-x-4 justify-center">
               {socialLinks.map((ele, index) => (
                 <IconLinkList
                   icon={ele.icon}
@@ -45,7 +45,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className="order-2 md:order-2 opacity-100  flex-shrink-0 ml-4 mt-5 md:mt-0">
+        <div className="order-2 md:order-2 opacity-100 flex-shrink-0  mt-5 md:mt-0">
           <div className="relative w-72 h-72 overflow-hidden border-2 border-primary/20 rounded-md shadow-lg ">
             <img
               alt="Mr.S.Jenushanth"

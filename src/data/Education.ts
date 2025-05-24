@@ -8,9 +8,10 @@ export const EducationData = [
     logo: jaffnaLogo,
     duration: "Apr 2017 - Aug 2021",
     location: "Jaffna, Srilanka",
+    link: "https://www.jfn.ac.lk/",
     summary: [
-      "Gained a solid understanding of core computer science subjects such as data structures, algorithms, operating systems, and databases.",
-      "Developed proficiency in multiple programming languages like Java, Php, Python and C++, and applied them in various academic projects.",
+      "Gained a solid understanding of core computer science subjects such as data structures, algorithms, operating systems, databases, machine learning and artifical intelligence.",
+      "Developed proficiency in multiple programming languages like java, php, python, c++, javascript, and applied them in various academic projects.",
       "Completed several hands-on projects including software applications, websites, and system simulations, which helped in practical understanding of theoretical concepts.",
     ],
   },
