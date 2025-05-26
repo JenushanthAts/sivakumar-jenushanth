@@ -17,7 +17,7 @@ const CodeIcon: FC<Props> = ({ size = 24, color = "currentColor" }) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-code"
+      className="lucide lucide-code h-5 w-5"
     >
       <polyline points="16 18 22 12 16 6" />
       <polyline points="8 6 2 12 8 18" />

@@ -1,8 +1,9 @@
 import EmailIcon from "../../assets/icons/email.icon";
 import { socialLinks } from "../../data/SocialLinks";
 import useContactForm from "../../hooks/useContactForm";
-import IconLinkList from "../iconLinkList/IconLinkList";
-import Toast from "../toast/Toast";
+import Button from "../../ui/button/Button";
+import IconLinkList from "../../ui/iconLinkList/IconLinkList";
+import Toast from "../../ui/toast/Toast";
 
 const Contact = () => {
   const {
@@ -35,7 +36,7 @@ const Contact = () => {
             <h2 className="text-slate-900 text-base font-semibold">Email</h2>
             <ul className="mt-4">
               <li className="flex items-center">
-                <div className="bg-gray text-primary h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                <div className="text-primary h-10 w-10 rounded-full flex items-center justify-center shrink-0 border border-gray-300">
                   <EmailIcon />
                 </div>
                 <a href="mailto:info@example.com" className="text-sm ml-4">
@@ -100,13 +101,12 @@ const Contact = () => {
             required
             className="font-mono w-full text-slate-900 rounded-md px-4 border border-gray-300 text-sm pt-2.5 outline-0 focus:border-blue-500"
           ></textarea>
-          <button
+          <Button
             type="submit"
-            className="font-mono text-white bg-primary hover:bg-primary-600 rounded-md text-[15px] font-medium px-4 py-2 w-full cursor-pointer !mt-6"
-            disabled={loading}
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+            label="Send"
+            loading={loading}
+            diasbled={loading}
+          />
         </form>
       </div>
     </div>

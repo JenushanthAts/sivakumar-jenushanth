@@ -1,5 +1,5 @@
 import { PrjectsData } from "../../data/Projects";
-import TimeLine from "../timeLine/TimeLine";
+import TimeLine from "../../ui/timeLine/TimeLine";
 
 const Projects = () => {
   return (

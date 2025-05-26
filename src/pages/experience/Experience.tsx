@@ -1,5 +1,5 @@
 import { ExperienceData } from "../../data/Experience";
-import TimeLine from "../timeLine/TimeLine";
+import TimeLine from "../../ui/timeLine/TimeLine";
 
 const Experience = () => {
   return (
