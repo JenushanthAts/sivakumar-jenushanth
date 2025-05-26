@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import Footer from "./components/layout/footer/Footer";
-import Navbar from "./components/layout/navBar/NavBar";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navBar/NavBar";
 import Contact from "./pages/contact/Contact";
 import Education from "./pages/education/Education";
 import Experience from "./pages/experience/Experience";
