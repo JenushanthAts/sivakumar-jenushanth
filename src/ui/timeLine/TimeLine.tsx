@@ -23,7 +23,7 @@ const TimeLine: FC<TimeLineProps> = ({
   imgHeight = 60,
 }) => {
   return (
-    <ol className="relative border-s border-gray-100 dark:border-gray-400">
+    <ol className="relative border-s border-gray-100 dark:border-gray-300">
       {data.map((item, index) => (
         <li className="mb-10 ms-6" key={index}>
           <span className="absolute flex items-center justify-center w-6 h-6  rounded-full -start-3 ring-8 ring-white bg-green-600">

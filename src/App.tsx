@@ -1,13 +1,13 @@
 import { useRef } from "react";
-import Contact from "./components/contact/Contact";
-import Divider from "./components/divider/Divider";
-import Education from "./components/education/Education";
-import Experience from "./components/experience/Experience";
-import Footer from "./components/footer/Footer";
-import Home from "./components/home/Home";
-import Navbar from "./components/navBar/NavBar";
-import Projects from "./components/projects/Projects";
-import Skills from "./components/skills/Skills";
+import Footer from "./components/layout/footer/Footer";
+import Navbar from "./components/layout/navBar/NavBar";
+import Contact from "./pages/contact/Contact";
+import Education from "./pages/education/Education";
+import Experience from "./pages/experience/Experience";
+import Home from "./pages/home/Home";
+import Projects from "./pages/projects/Projects";
+import Skills from "./pages/skills/Skills";
+import Divider from "./ui/divider/Divider";
 
 const App = () => {
   const homeRef = useRef<HTMLDivElement | null>(null);

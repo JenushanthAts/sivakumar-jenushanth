@@ -52,7 +52,7 @@ const Toast: FC<ToastProps> = ({
   return (
     <div className="fixed bottom-6 inset-x-0 flex justify-center z-50">
       <div
-        className={`flex items-center w-full max-w-xs p-4 rounded-lg shadow-sm transition-all transform animate-slide-up
+        className={`flex items-center w-full max-w-sm p-4 rounded-lg shadow-sm transition-all transform animate-slide-up
           ${
             isSuccess ? "text-green-600 bg-green-50" : "text-red-600 bg-red-50"
           }`}

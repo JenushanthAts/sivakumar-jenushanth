@@ -1,5 +1,5 @@
 import { EducationData } from "../../data/Education";
-import TimeLine from "../timeLine/TimeLine";
+import TimeLine from "../../ui/timeLine/TimeLine";
 
 const Education = () => (
   <div>

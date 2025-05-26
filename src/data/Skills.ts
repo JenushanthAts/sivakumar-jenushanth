@@ -114,10 +114,7 @@ export const skillsSet = [
         title: "Github",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       },
-      {
-        title: "Git",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      },
+
       {
         title: "Dialogflow",
         src: "https://avatars.githubusercontent.com/u/8170782?s=200&v=4",

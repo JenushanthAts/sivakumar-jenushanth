@@ -1,9 +1,8 @@
 import myResume from "../../../public/doc/Resume.pdf";
-import DownloadIcon from "../../assets/icons/download.icon";
 import myProfile from "../../assets/Profile.webp";
 import { socialLinks } from "../../data/SocialLinks";
-import Button from "../button/Button";
-import IconLinkList from "../iconLinkList/IconLinkList";
+import Button from "../../ui/button/Button";
+import IconLinkList from "../../ui/iconLinkList/IconLinkList";
 
 const Home = () => {
   const downLoadCv = async () => {
@@ -29,7 +28,6 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Button
               onClick={downLoadCv}
-              icon={<DownloadIcon size={20} />}
               label="Download CV"
               variant="primary"
             />
