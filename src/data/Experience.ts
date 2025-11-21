@@ -7,7 +7,7 @@ export const ExperienceData = [
   {
     title: "Full Stack Engineer",
     logo: `${avonetLogo}`,
-    duration: "June 2023 - Present",
+    duration: "June 2023 - Aug 2025",
     location: "Australia . Remote",
     subHeading: "Avonet Technologies",
     link: "https://avonet.com.au/",

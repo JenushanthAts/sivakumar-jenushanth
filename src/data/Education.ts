@@ -3,6 +3,15 @@ import koddaikallarLogo from "../assets/School.webp";
 
 export const EducationData = [
   {
+    title: "Msc Cyber Security",
+    subHeading: "University of Chester",
+    logo: jaffnaLogo,
+    duration: "Oct 2025 - Present",
+    location: "Chester, England",
+    link: "https://www.jfn.ac.lk/",
+
+  },
+  {
     title: "Bsc (Hons) in Computer Science",
     subHeading: "University of Jaffna",
     logo: jaffnaLogo,
